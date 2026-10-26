@@ -1,16 +1,12 @@
-# Playmobil Pajzsok v3
+# Playmobil Pajzsok v5
 
-GitHub Pages webapp – 3 pajzs/csempesor, szürke/zöld keret, kattintással jelölés, 33 Animobil formaoldal.
+GitHub Pages: upload all 6 files to repository root, overwriting old files.
 
-## Újdonság
-- Egyes pajzsokhoz saját fénykép adható a **Részletek → Saját pajzskép hozzáadása** ponton keresztül.
-- A képek az adott böngésző IndexedDB tárhelyén maradnak, nincsenek feltöltve GitHubra. Nem részei a JSON mentésnek.
-- A korábbi megvan-jelöléseket változatlan `playmobil-shields-owned-v1` kulccsal kezeli.
-- A csomag minden szükséges fájlt tartalmaz.
+## New
+- Add custom individual shields within any of 33 Animobil categories.
+- Optional item-level source links to Animobil or PlaymoDB.
+- Custom items and source links are included in JSON backup/restore.
+- Previous item IDs and owned states remain unchanged.
+- 3 tiles/row, tap toggles gray/green.
 
-## GitHub Pages
-
-A ZIP **tartalmát** töltsd fel a repository gyökerébe (`index.html`, `app.js`, `sw.js`, `icon.svg`, `manifest.webmanifest`, `README.md`). A Pages `main` / `(root)` legyen. Frissítés előtt ajánlott JSON mentést készíteni.
-
-## Források
-Animobil Shields & Heraldry kategóriaoldalak (a felhasználó által átadott URL-ek); PlaymoDB főoldal. A jelenlegi cikkszámlista nem teljes és több azonosító készletszám; egyedi hitelesített termékképek és egyedi PlaymoDB-tétellinkek még nincsenek beépítve.
+The catalog is **not exhaustive**; images are placeholders unless added by the user. Animobil pages were unreachable for verification during this revision. Local photo blobs are stored in IndexedDB and are not included in JSON backups.
