@@ -32,16 +32,63 @@ const groups = {
 'Scutum 2':'30 21 7894|30 62 2728|30 64 4184|71268',
 'Ships Wheel':'30 62 4215'
 };
-const items = Object.entries(groups).flatMap(([shape,s])=>s.split('|').map(id=>({id,shape,key:shape+'|'+id})));
+const categories = {
+  "Arched": "https://animobil.info/shields/text/5d0863aa-569.html",
+  "Axehead": "https://animobil.info/shields/text/5d0863aa-570.html",
+  "Buckler": "https://animobil.info/shields/text/5d0863aa-380.html",
+  "Colossus": "https://animobil.info/shields/text/5d0863aa(shields)-1128.html",
+  "Double Concave": "https://animobil.info/shields/text/5d0863aa-584.html",
+  "Double Indent": "https://animobil.info/shields/text/5d0863aa-shields-1203.html",
+  "Dragon Wing": "https://animobil.info/shields/text/5d0863aa-585.html",
+  "Elongated Oval": "https://animobil.info/shields/text/5d0863aa-575.html",
+  "Giant Shield": "https://animobil.info/shields/text/5d0863aa-shields-1350.html",
+  "Heater": "https://animobil.info/shields/text/5d0863aa-571.html",
+  "Heater - Childs": "https://animobil.info/shields/text/5d0863aa-572.html",
+  "Heater - Indented": "https://animobil.info/shields/text/5d0863aa-574.html",
+  "Heater - Lyra": "https://animobil.info/shields/text/5d0863aa-shields15-1171.html",
+  "Heater - Pointed": "https://animobil.info/shields/text/5d0863aa-623.html",
+  "Heater - Pointed Small": "https://animobil.info/shields/text/5d0863aa(shields)-910.html",
+  "Heater - Small": "https://animobil.info/shields/text/5d0863aa-573.html",
+  "Heater - Small 2": "https://animobil.info/shields/text/5d0863aa-shields-1273.html",
+  "Heater - Type 1": "https://animobil.info/shields/text/5d0863aa-shields-1295.html",
+  "Kite": "https://animobil.info/shields/text/5d0863aa-583.html",
+  "Kite - XXL": "https://animobil.info/shields/text/5d0863aa-shields-1303.html",
+  "Magic Light Shield": "https://animobil.info/shields/text/5d0863aa-shields-1249.html",
+  "Oval": "https://animobil.info/shields/text/5d0863aa-576.html",
+  "Pavise": "https://animobil.info/shields/text/5d0863aa-577.html",
+  "Riot": "https://animobil.info/shields/text/5d0863aa-578.html",
+  "Round": "https://animobil.info/shields/text/5d0863aa-579.html",
+  "Round Display": "https://animobil.info/shields/text/5d0863aa-shields-1279.html",
+  "Round - Center Boss": "https://animobil.info/shields/text/5d0863aa-580.html",
+  "Round - Center Boss 2": "https://animobil.info/shields/text/5d0863aa-shields-1218.html",
+  "Round - Two Part": "https://animobil.info/shields/text/5d0863aa-581.html",
+  "Round - Jewel Center": "https://animobil.info/shields/text/5d0863aa-618.html",
+  "Scutum": "https://animobil.info/shields/text/5d0863aa-582.html",
+  "Scutum 2": "https://animobil.info/shields/text/5d0863aa(shields15)-1162.html",
+  "Ships Wheel": "https://animobil.info/shields/text/5d0863aa-shields-1188.html"
+};
+for (const name of Object.keys(categories)) if (!(name in groups)) groups[name]='';
+const items = Object.entries(groups).flatMap(([shape,s])=>s?s.split('|').map(id=>({id,shape,key:shape+'|'+id})):[]);
 const storageKey='playmobil-shields-owned-v1';
+// User-provided pictures are stored locally in IndexedDB; no images are copied from third-party catalogs.
+let photoDb;
+const photos=new Map();
+function dbOpen(){return new Promise((resolve,reject)=>{const req=indexedDB.open('playmobil-shields-photos',1);req.onupgradeneeded=()=>req.result.createObjectStore('photos');req.onsuccess=()=>resolve(req.result);req.onerror=()=>reject(req.error)})}
+async function loadPhotos(){try{photoDb=await dbOpen();const tx=photoDb.transaction('photos','readonly');const store=tx.objectStore('photos');for(const item of items){const file=await new Promise(resolve=>{const r=store.get(item.key);r.onsuccess=()=>resolve(r.result);r.onerror=()=>resolve(null)});if(file)photos.set(item.key,URL.createObjectURL(file))}render()}catch(err){console.warn('Local photos unavailable',err)}}
+async function savePhoto(key,file){if(!photoDb)photoDb=await dbOpen();await new Promise((resolve,reject)=>{const tx=photoDb.transaction('photos','readwrite');tx.objectStore('photos').put(file,key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});if(photos.has(key))URL.revokeObjectURL(photos.get(key));photos.set(key,URL.createObjectURL(file));render()}
+async function deletePhoto(key){if(!photoDb)return;await new Promise((resolve,reject)=>{const tx=photoDb.transaction('photos','readwrite');tx.objectStore('photos').delete(key);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)});if(photos.has(key)){URL.revokeObjectURL(photos.get(key));photos.delete(key)}render()}
+let currentItem=null;
 let owned=new Set();try{const a=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(a))owned=new Set(a)}catch{}
 const $=id=>document.getElementById(id);
 const persist=()=>localStorage.setItem(storageKey,JSON.stringify([...owned]));
 const plain=x=>x.replace(/[^0-9]/g,'');
 function shieldSvg(shape){const round=/Round|Buckler|Riot/.test(shape),oval=/Oval|Scutum/.test(shape),kite=/Kite|Heater|Pavise/.test(shape);const outline=round?'<circle cx="40" cy="43" r="30"/>':oval?'<ellipse cx="40" cy="42" rx="27" ry="35"/>':kite?'<path d="M11 10 Q40 16 69 10 L65 52 Q54 70 40 80 Q26 70 15 52Z"/>':'<path d="M15 8 L65 8 L72 37 L40 81 L8 37Z"/>';return `<svg viewBox="0 0 80 86" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3">${outline}<path d="M40 22V61M23 42H57" stroke-width="2" opacity=".4"/></svg>`}
-function render(){const q=$('search').value.toLowerCase().trim(),f=$('filter').value;let visible=items.filter(v=>(!q||(v.id+' '+v.shape).toLowerCase().includes(q))&&(f==='all'||(f==='owned')===owned.has(v.key)));const grid=$('grid');grid.replaceChildren();const frag=document.createDocumentFragment();for(const item of visible){let tile=document.createElement('article');tile.className='tile'+(owned.has(item.key)?' owned':'');tile.tabIndex=0;tile.setAttribute('role','button');tile.setAttribute('aria-pressed',owned.has(item.key)?'true':'false');tile.innerHTML=`<div class="shield">${shieldSvg(item.shape)}</div><span class="name"></span><span class="type"></span><span class="check">${owned.has(item.key)?'✓ Megvan':' '}</span><span class="more">Részletek ↗</span>`;tile.querySelector('.name').textContent=item.id;tile.querySelector('.type').textContent=item.shape;tile.addEventListener('click',e=>{if(e.target.closest('.more')){details(item);return}if(owned.has(item.key))owned.delete(item.key);else owned.add(item.key);persist();render()});tile.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();tile.click()}});frag.append(tile)}grid.append(frag);$('empty').classList.toggle('hidden',visible.length>0);$('count').textContent=`${owned.size} / ${items.length} megvan · ${visible.length} látható`}
-function details(item){$('detailTitle').textContent=item.id;$('detailType').textContent='Forma: '+item.shape;$('animLink').href='https://animobil.info/shields/text/wit-toc.html';$('playLink').href='https://www.playmodb.org/';$('dialog').showModal()}
+function render(){const q=$('search').value.toLowerCase().trim(),f=$('filter').value;let visible=items.filter(v=>(!q||(v.id+' '+v.shape).toLowerCase().includes(q))&&(f==='all'||(f==='owned')===owned.has(v.key)));const category=$('category').value;visible=visible.filter(v=>category==='all'||v.shape===category);const grid=$('grid');grid.replaceChildren();const frag=document.createDocumentFragment();for(const item of visible){let tile=document.createElement('article');tile.className='tile'+(owned.has(item.key)?' owned':'');tile.tabIndex=0;tile.setAttribute('role','button');tile.setAttribute('aria-pressed',owned.has(item.key)?'true':'false');tile.innerHTML=`<div class="shield">${photos.has(item.key)?'<img loading="lazy" alt="Pajzsfotó" src="'+photos.get(item.key)+'">':shieldSvg(item.shape)}</div><span class="name"></span><span class="type"></span><span class="check">${owned.has(item.key)?'✓ Megvan':' '}</span><span class="more">Részletek ↗</span>`;tile.querySelector('.name').textContent=item.id;tile.querySelector('.type').textContent=item.shape;tile.addEventListener('click',e=>{if(e.target.closest('.more')){details(item);return}if(owned.has(item.key))owned.delete(item.key);else owned.add(item.key);persist();render()});tile.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();tile.click()}});frag.append(tile)}grid.append(frag);$('empty').classList.toggle('hidden',visible.length>0);$('empty').textContent=category!=='all'&&!items.some(v=>v.shape===category)?'Ehhez a kategóriához még nincs felvitt cikkszám. Az Animobil forrásoldal fent megnyitható.':'Nincs találat.';$('categoryLinks').innerHTML='';if(category!=='all'){const anchor=document.createElement('a');anchor.href=categories[category];anchor.target='_blank';anchor.rel='noopener';anchor.textContent='Animobil: '+category+' ↗';$('categoryLinks').append(anchor)}$('count').textContent=`${owned.size} / ${items.length} megvan · ${visible.length} látható`}
+function details(item){currentItem=item;$('photoInput').value='';$('removePhoto').hidden=!photos.has(item.key);$('detailTitle').textContent=item.id;$('detailType').textContent='Forma: '+item.shape;$('animLink').href=categories[item.shape]||'https://animobil.info/shields/text/wit-toc.html';$('playLink').href='https://www.playmodb.org/';$('dialog').showModal()}
+const categorySelect=$('category');for(const name of Object.keys(categories)){const option=document.createElement('option');option.value=name;option.textContent=name;categorySelect.append(option)}categorySelect.onchange=render;
+$('photoInput').onchange=async e=>{const f=e.target.files?.[0];if(!f||!currentItem)return;if(!f.type.startsWith('image/')||f.size>5_000_000){alert('Legfeljebb 5 MB-os képfájlt válassz.');return}try{await savePhoto(currentItem.key,f);$('dialog').close()}catch(err){alert('Nem sikerült a kép mentése: '+err.message)}};
+$('removePhoto').onclick=async()=>{if(!currentItem)return;await deletePhoto(currentItem.key);$('dialog').close()};
 $('close').onclick=()=>$('dialog').close();$('search').oninput=render;$('filter').onchange=render;
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify({version:1,owned:[...owned]},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='playmobil-pajzsok-mentes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),500)};
 $('import').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const data=JSON.parse(await file.text());if(!Array.isArray(data.owned))throw Error('Érvénytelen mentés');owned=new Set(data.owned.filter(x=>items.some(y=>y.key===x)));persist();render()}catch(err){alert('Nem sikerült a mentés beolvasása: '+err.message)}e.target.value=''};
-if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});render();
+if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});render();loadPhotos();
