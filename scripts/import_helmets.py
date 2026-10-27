@@ -57,7 +57,14 @@ def main():
  for page in range(1,24):
   try:
    html=fetch(page);p=Table();p.feed(html);added=0
-   if page in (1,2):samples.append({'page':page,'htmlLength':len(html),'rows':len(p.rows),'firstRows':[{'cells':r['cells'][:5], 'links':r['links'][:3], 'images':r['images'][:2]} for r in p.rows[:12]],'htmlStart':html[:5500],'partLinks':re.findall(r'<a[^>]+href=["\x27][^"\x27]*(?:part|show)[^"\x27]*["\x27][^>]*>.*?</a>',html,re.I|re.S)[:8]})
+   if page in (1,2):
+    pos=html.find('Displaying parts')
+    if pos<0:pos=len(html)//3
+    samples.append({'page':page,'htmlLength':len(html),'rows':len(p.rows),
+     'itemMarkupSample':html[min(len(html),pos+500):min(len(html),pos+11500)],
+     'htmlEnd':html[-2500:],
+     'partLinkCount':len(re.findall(r'showpart|partnum|part\.pl',html,re.I))})
+  
    for row in p.rows:
     # Require a part-detail link; do not turn navigation links into inventory items.
     # PlaymoDB displays numbers both as links and as ordinary table text.
