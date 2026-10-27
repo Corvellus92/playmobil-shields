@@ -60,7 +60,7 @@ if __name__=='__main__':
         try:
             old=json.loads(path.read_text(encoding='utf-8'))
             for part,links in old.get('imageMap',{}).items():
-                if re.fullmatch(r'\\d{8}',part) and isinstance(links,list):
+                if re.fullmatch(r'\d{8}',part) and isinstance(links,list):
                     images.setdefault(part,[])
                     images[part]=sorted(set(images[part])|{link for link in links if isinstance(link,str) and link.startswith('https://animobil.info/shields/wit-icons/')})
         except (OSError,ValueError,TypeError) as exc:
@@ -68,7 +68,7 @@ if __name__=='__main__':
     data={'source':INDEX,'imageMap':images,'pagesScanned':count,
           'status':'partial' if errors else 'ok',
           'errorCount':len(errors)}
-    path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\\n',encoding='utf-8')
+    path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
     print('Image keys:',len(images),'pages:',count,'errors:',len(errors),
           'status:',data['status'])
     if errors: print('First scrape error:',errors[0])
