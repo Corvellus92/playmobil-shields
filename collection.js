@@ -10,6 +10,9 @@ let selected=null;
 let catalog=[];
 const catalogOwnedKey='playmobil-helmets-catalog-owned-v12';
 let catalogOwned=new Set();
+const editsKey='playmobil-helmets-catalog-edits-v13';
+let catalogEdits={};try{const v=JSON.parse(localStorage.getItem(editsKey)||'{}');if(v&&typeof v==='object'&&!Array.isArray(v))catalogEdits=v}catch{}
+function saveCatalogEdits(){localStorage.setItem(editsKey,JSON.stringify(catalogEdits))}
 try { const saved=JSON.parse(localStorage.getItem(catalogOwnedKey)||'[]');if(Array.isArray(saved))catalogOwned=new Set(saved) } catch {}
 async function loadCatalog(){
  if(section!=='helmets')return;
@@ -22,16 +25,16 @@ async function loadCatalog(){
   render();
  }catch(e){$('catalogStatus').textContent='PlaymoDB: az automatikus katalógus még nem érhető el';}
 }
-function allEntries(){return [...catalog.filter(x=>!records.some(y=>y.key===x.id)).map(x=>({key:x.id,name:x.name,part:x.part,type:x.type||'Other',image:x.image,source:x.source,owned:catalogOwned.has(x.id),catalog:true})),...records]}
+function allEntries(){return [...catalog.filter(x=>!records.some(y=>y.key===x.id)).map(x=>({key:x.id,name:catalogEdits[x.id]?.name??x.name,part:catalogEdits[x.id]?.part??x.part,type:catalogEdits[x.id]?.type??x.type??'Other',image:catalogEdits[x.id]?.image??x.image,source:catalogEdits[x.id]?.source??x.source,owned:catalogOwned.has(x.id),catalog:true})),...records]}
 
 function store(){localStorage.setItem(storageKey,JSON.stringify(records))}
 function validLink(value){if(!value)return true;try{return ['http:','https:'].includes(new URL(value).protocol)}catch{return false}}
 function makeKey(){return 'manual-'+Date.now()+'-'+Math.random().toString(36).slice(2)}
 $('title').textContent=titles[section];$('navTitle').textContent=section;
-for(const name of types[section]){const option=document.createElement('option');option.value=name;option.textContent=name;$('type').append(option)}
+for(const name of types[section]){const option=document.createElement('option');option.value=name;option.textContent=name;$('type').append(option);const filterOption=option.cloneNode(true);$('typeFilter').append(filterOption)}
 function render(){
- const term=$('search').value.toLocaleLowerCase(),filter=$('filter').value;
- const visible=allEntries().filter(x=>(!term||[x.name,x.part,x.type].join(' ').toLocaleLowerCase().includes(term))&&(filter==='all'||(filter==='owned')===!!x.owned));
+ const term=$('search').value.toLocaleLowerCase(),filter=$('filter').value,typeFilter=$('typeFilter').value;
+ const visible=allEntries().filter(x=>(!term||[x.name,x.part,x.type].join(' ').toLocaleLowerCase().includes(term))&&(typeFilter==='all'||x.type===typeFilter)&&(filter==='all'||(filter==='owned')===!!x.owned));
  $('grid').replaceChildren();
  for(const entry of visible){
  const tile=document.createElement('article');tile.className='tile'+(entry.owned?' owned':'');
@@ -57,12 +60,12 @@ $('save').onclick=()=>{
  const name=$('name').value.trim(),part=$('part').value.trim(),type=$('type').value,image=$('image').value.trim(),source=$('source').value.trim();
  if(!name&&!part){alert('Adj meg egy megnevezést vagy cikkszámot.');return}
  if(!validLink(image)||!validLink(source)){alert('Csak érvényes http vagy https linket adj meg.');return}
- if(selected?.catalog){records.push({key:selected.key,name,part,type,image,source,owned:selected.owned});catalogOwned.delete(selected.key);localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]));}else if(selected)Object.assign(selected,{name,part,type,image,source});else records.push({key:makeKey(),name,part,type,image,source,owned:false});
+ if(selected?.catalog){catalogEdits[selected.key]={name,part,type,image,source};saveCatalogEdits();}else if(selected)Object.assign(selected,{name,part,type,image,source});else records.push({key:makeKey(),name,part,type,image,source,owned:false});
  store();$('dialog').close();render();
 };
 $('delete').onclick=()=>{if(!selected||selected.catalog)return;if(!confirm('Biztosan törlöd ezt a cikket?'))return;records=records.filter(x=>x.key!==selected.key);store();$('dialog').close();render()};
-$('search').oninput=render;$('filter').onchange=render;
-$('export').onclick=()=>{const blob=new Blob([JSON.stringify({version:11,section,records},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='playmobil-'+section+'-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+$('search').oninput=render;$('filter').onchange=render;$('typeFilter').onchange=render;
+$('export').onclick=()=>{const blob=new Blob([JSON.stringify({version:13,section,records,catalogOwned:[...catalogOwned],catalogEdits},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='playmobil-'+section+'-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 $('importBtn').onclick=()=>$('importFile').click();
-$('importFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.section!==section||!Array.isArray(obj.records))throw Error('Más kategória vagy hibás mentés');if(!confirm('Felülírod a jelenlegi '+section+' listát?'))return;records=obj.records.filter(x=>x&&typeof x.key==='string'&&typeof x.name==='string'&&typeof x.part==='string'&&types[section].includes(x.type)&&validLink(x.image||'')&&validLink(x.source||''));store();render()}catch(err){alert('Hibás mentés: '+err.message)}e.target.value=''};
+$('importFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.section!==section||!Array.isArray(obj.records))throw Error('Más kategória vagy hibás mentés');if(!confirm('Felülírod a jelenlegi '+section+' listát?'))return;if(section==='helmets'){if(Array.isArray(obj.catalogOwned)){catalogOwned=new Set(obj.catalogOwned.filter(x=>typeof x==='string'));localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]))}if(obj.catalogEdits&&typeof obj.catalogEdits==='object'&&!Array.isArray(obj.catalogEdits)){catalogEdits=obj.catalogEdits;saveCatalogEdits()}}records=obj.records.filter(x=>x&&typeof x.key==='string'&&typeof x.name==='string'&&typeof x.part==='string'&&types[section].includes(x.type)&&validLink(x.image||'')&&validLink(x.source||''));store();render()}catch(err){alert('Hibás mentés: '+err.message)}e.target.value=''};
 render();loadCatalog();
