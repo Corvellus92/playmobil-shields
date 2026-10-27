@@ -75,7 +75,9 @@ def main():
   except Exception as exc:errors.append({'page':page,'error':str(exc)[:200]});print('FAILED page',page,str(exc)[:160])
   time.sleep(.2)
  payload={'source':BASE+'/cgi-bin/category.pl?category=Wearable-Headwear%2CHard','pagesAttempted':23,'pagesSucceeded':successful,'status':'ok' if successful==23 else 'partial','errors':errors,'items':list(items.values())}
- if items:DEST.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
- else:print('No verified items: preserving previous file')
+ payload['itemsFound']=len(items)
+ payload['diagnostic']='No parts returned; check errors and HTML parsing' if not items else 'Items returned'
+ DEST.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ if not items:print('No verified items; diagnostic JSON written to explain why')
  print('Total parts:',len(items),'pages:',successful,'errors:',len(errors))
 if __name__=='__main__':main()
