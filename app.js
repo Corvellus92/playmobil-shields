@@ -86,7 +86,7 @@ const scannedCategories=new Set();
 async function loadSyncedCatalog(){
   try{
     const response=await fetch('./animobil-images.json',{cache:'no-store'});
-    if(!response.ok)return;
+    if(!response.ok){$('imageSyncStatus').textContent='Animobil képkatalógus: adatfájl még nem elérhető';return;}
     const data=await response.json();
     if(!data.imageMap||typeof data.imageMap!=='object')return;
     for(const [part,links] of Object.entries(data.imageMap)){
@@ -94,8 +94,11 @@ async function loadSyncedCatalog(){
       const link=links.find(u=>typeof u==='string'&&u.startsWith('https://animobil.info/shields/wit-icons/'));
       if(link&&!animobilDiscovered.has(part))animobilDiscovered.set(part,link);
     }
+    const total=Object.values(data.imageMap).reduce((sum,urls)=>sum+(Array.isArray(urls)?urls.length:0),0);
+    const status=data.status==='partial'?' · részleges adatgyűjtés':'';
+    $('imageSyncStatus').textContent='Animobil képek: '+total+' hivatkozás / '+Object.keys(data.imageMap).length+' cikkszám'+status;
     render();
-  }catch(err){console.info('Szinkronizált képkatalógus még nem érhető el.',err.message)}
+  }catch(err){$('imageSyncStatus').textContent='Animobil képkatalógus: betöltési hiba';console.info('Szinkronizált képkatalógus még nem érhető el.',err.message)}
 }
 
 const animobilPart=id=>id.replace(/[^0-9]/g,'');
