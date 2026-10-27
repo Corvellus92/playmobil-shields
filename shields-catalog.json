@@ -1,0 +1,3739 @@
+{
+  "source": "https://playmodb.org/cgi-bin/category.pl?category=Tool-Shield",
+  "pagesAttempted": 8,
+  "pagesSucceeded": 8,
+  "status": "ok",
+  "errors": [],
+  "parserSamples": [
+    {
+      "page": 1,
+      "htmlLength": 39734,
+      "lineups": 50,
+      "firstEntries": [
+        {
+          "part": "30 20 3432",
+          "name": "Shield for lance arm, tapered ",
+          "image": "https://playmodb.org/parts/2/20/30%2020%203432.gif",
+          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-3432",
+          "color": "red"
+        },
+        {
+          "part": "30 64 4275",
+          "name": "Shield with centre boss, large ",
+          "image": "https://playmodb.org/parts/6/64/30%2064%204275_online.jpg",
+          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4275",
+          "color": "grey"
+        },
+        {
+          "part": "30 24 4723",
+          "name": "Shield, Colossus-size ",
+          "image": "https://playmodb.org/parts/2/24/30%2024%204723_online(2).jpg",
+          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-24-4723",
+          "color": "black"
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "htmlLength": 35860,
+      "lineups": 50,
+      "firstEntries": [
+        {
+          "part": "30 64 7742",
+          "name": "Shield, large, concave indented shape ",
+          "image": "https://playmodb.org/parts/6/64/30%2064%207742.gif",
+          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7742",
+          "color": "red/silver"
+        },
+        {
+          "part": "30 64 8582",
+          "name": "Shield, large, concave indented shape ",
+          "image": "",
+          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8582",
+          "color": " "
+        },
+        {
+          "part": "30 62 1546",
+          "name": "Shield, large, concave indented shape ",
+          "image": "https://playmodb.org/parts/6/62/30%2062%201546_online.jpg",
+          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-1546",
+          "color": "grey"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "playmodb:30203432",
+      "part": "30 20 3432",
+      "name": "Shield for lance arm, tapered",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/20/30%2020%203432.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-3432",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644275",
+      "part": "30 64 4275",
+      "name": "Shield with centre boss, large",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%204275_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4275",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30244723",
+      "part": "30 24 4723",
+      "name": "Shield, Colossus-size",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/24/30%2024%204723_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-24-4723",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30222890",
+      "part": "30 22 2890",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/22/30%2022%202890.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-22-2890",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30248840",
+      "part": "30 24 8840",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/24/30%2024%208840.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-24-8840",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624820",
+      "part": "30 62 4820",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204820.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4820",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633250",
+      "part": "30 63 3250",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20325.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3250",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633760",
+      "part": "30 63 3760",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203760.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3760",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633820",
+      "part": "30 63 3820",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20382.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3820",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633872",
+      "part": "30 63 3872",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203872.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3872",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635664",
+      "part": "30 63 5664",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205664_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5664#subparts",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30640632",
+      "part": "30 64 0632",
+      "name": "Shield, double concave curve",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%200632.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-0632",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642732",
+      "part": "30 64 2732",
+      "name": "Shield, elongated oval (African)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202732.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2732",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644282",
+      "part": "30 64 4282",
+      "name": "Shield, elongated oval (African)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%204282.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4282",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645083",
+      "part": "30 64 5083",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%205083_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5083",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4763a",
+      "part": "p4763a",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4763a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4763a",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4937c",
+      "part": "p4937c",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4937c.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4937c",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30214123",
+      "part": "30 21 4123",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/21/30%2021%204123.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-21-4123",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30627536",
+      "part": "30 62 7536",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%207536_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-7536#subparts",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30204832",
+      "part": "30 20 4832",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/20/30%2020%204832.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-4832",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623823",
+      "part": "30 62 3823",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203823.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3823",
+      "color": "light grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630323",
+      "part": "30 63 0323",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200323.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0323",
+      "color": "dark metal",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647382",
+      "part": "30 64 7382",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207382.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7382",
+      "color": "red/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647672",
+      "part": "30 64 7672",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207672.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7672#subparts",
+      "color": "black/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648032",
+      "part": "30 64 8032",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208032.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8032",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630914",
+      "part": "30 63 0914",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200914.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0914",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631824",
+      "part": "30 63 1824",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1824",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631844",
+      "part": "30 63 1844",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1844",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631854",
+      "part": "30 63 1854",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1854",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631874",
+      "part": "30 63 1874",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1874",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631894",
+      "part": "30 63 1894",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1894",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30646843",
+      "part": "30 64 6843",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%206843_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-6843#subparts",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631864",
+      "part": "30 63 1864",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201864.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1864",
+      "color": "?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631884",
+      "part": "30 63 1884",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201884_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1884",
+      "color": "black/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635564",
+      "part": "30 63 5564",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205564_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5564",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30646995",
+      "part": "30 64 6995",
+      "name": "Shield, flame-shaped (inverted curved triangle with edge cutout)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%206995.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-6995",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4646a",
+      "part": "p4646a",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4646a.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4646a#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4915c",
+      "part": "p4915c",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4915c.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4915c",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p5886a",
+      "part": "p5886a",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p5886a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p5886a",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30221850",
+      "part": "30 22 1850",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/22/30%2022%201850.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-22-1850",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626752",
+      "part": "30 62 6752",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206752.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6752#subparts",
+      "color": "grey/magenta/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30627232",
+      "part": "30 62 7232",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%207232.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-7232",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626413",
+      "part": "30 62 6413",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206413.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6413",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630272",
+      "part": "30 63 0272",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0272",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634062",
+      "part": "30 63 4062",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204062.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4062",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631853",
+      "part": "30 63 1853",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201853.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1853",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632773",
+      "part": "30 63 2773",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202773.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2773",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642992",
+      "part": "30 64 2992",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202992.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2992",
+      "color": "grey/yellow/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643612",
+      "part": "30 64 3612",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203612.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3612",
+      "color": "bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645472",
+      "part": "30 64 5472",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%205472.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5472#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647742",
+      "part": "30 64 7742",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207742.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7742",
+      "color": "red/silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648582",
+      "part": "30 64 8582",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8582",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30621546",
+      "part": "30 62 1546",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%201546_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-1546",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629656",
+      "part": "30 62 9656",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209656_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9656",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631694",
+      "part": "30 63 1694",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1694",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631704",
+      "part": "30 63 1704",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201704.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1704",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631714",
+      "part": "30 63 1714",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1714",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631784",
+      "part": "30 63 1784",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1784",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631814",
+      "part": "30 63 1814",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1814",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632724",
+      "part": "30 63 2724",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202724_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2724",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635554",
+      "part": "30 63 5554",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205554_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5554",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639424",
+      "part": "30 63 9424",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209424_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9424",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635555",
+      "part": "30 63 5555",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205555_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5555",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635565",
+      "part": "30 63 5565",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205565_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5565",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632006",
+      "part": "30 63 2006",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202006_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2006",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633737",
+      "part": "30 63 3737",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203737_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3737",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647785",
+      "part": "30 64 7785",
+      "name": "Shield, large, concave indented shape",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207785.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7785",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645510",
+      "part": "30 64 5510",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20551.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5510",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p3651a",
+      "part": "p3651a",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p3651a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p3651a",
+      "color": "bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624792",
+      "part": "30 62 4792",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204792.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4792",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626822",
+      "part": "30 62 6822",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206822.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6822",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30627082",
+      "part": "30 62 7082",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%207082.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-7082",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635494",
+      "part": "30 63 5494",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205494_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5494",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643632",
+      "part": "30 64 3632",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203632.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3632",
+      "color": "bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647552",
+      "part": "30 64 7552",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207552.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7552",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648592",
+      "part": "30 64 8592",
+      "name": "Shield, large, rectangular, curved top",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8592",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622728",
+      "part": "30 62 2728",
+      "name": "Shield, large, rectangular, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2728",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30638048",
+      "part": "30 63 8048",
+      "name": "Shield, large, rectangular, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-8048",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644184",
+      "part": "30 64 4184",
+      "name": "Shield, large, rectangular, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%204184_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4184",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626068",
+      "part": "30 62 6068",
+      "name": "Shield, large, rectangular, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6068",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631932",
+      "part": "30 63 1932",
+      "name": "Shield, large, rectangular, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201932.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1932",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642502",
+      "part": "30 64 2502",
+      "name": "Shield, large, rectangular, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202502.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2502",
+      "color": "grey/yellow/blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4555a",
+      "part": "p4555a",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4555a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4555a",
+      "color": "blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4689b",
+      "part": "p4689b",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4689b.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4689b",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30621960",
+      "part": "30 62 1960",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%201960.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-1960",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622540",
+      "part": "30 62 2540",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202540.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2540",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622182",
+      "part": "30 62 2182",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202182.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2182",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623042",
+      "part": "30 62 3042",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203042.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3042",
+      "color": "green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623252",
+      "part": "30 62 3252",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203252.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3252",
+      "color": "purple/yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623652",
+      "part": "30 62 3652",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203652.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3652",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624972",
+      "part": "30 62 4972",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204972.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4972#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625362",
+      "part": "30 62 5362",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205362.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5362",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625442",
+      "part": "30 62 5442",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205442.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5442",
+      "color": "blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30627002",
+      "part": "30 62 7002",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%207002.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-7002",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622833",
+      "part": "30 62 2833",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202833.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2833",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623793",
+      "part": "30 62 3793",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203793.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3793",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633280",
+      "part": "30 63 3280",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20328.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3280",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634980",
+      "part": "30 63 4980",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204980.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4980",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630532",
+      "part": "30 63 0532",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200532.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0532",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634882",
+      "part": "30 63 4882",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204882.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4882",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630594",
+      "part": "30 63 0594",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200594_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0594",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632684",
+      "part": "30 63 2684",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202684_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2684",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634574",
+      "part": "30 63 4574",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4574",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644920",
+      "part": "30 64 4920",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20492.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4920",
+      "color": "yellow/green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644930",
+      "part": "30 64 4930",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%204930.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4930",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645390",
+      "part": "30 64 5390",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20539.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5390",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645440",
+      "part": "30 64 5440",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20544.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5440",
+      "color": "purple",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645550",
+      "part": "30 64 5550",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20555.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5550",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642392",
+      "part": "30 64 2392",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202392.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2392",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647482",
+      "part": "30 64 7482",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207482.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7482",
+      "color": "grey/green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648062",
+      "part": "30 64 8062",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208062.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8062",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643424",
+      "part": "30 64 3424",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203424_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3424",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622403",
+      "part": "30 62 2403",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202403.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2403",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622413",
+      "part": "30 62 2413",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202413_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2413",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626423",
+      "part": "30 62 6423",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206423.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6423",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629773",
+      "part": "30 62 9773",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209773_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9773",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630330",
+      "part": "30 63 0330",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20033.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0330",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632210",
+      "part": "30 63 2210",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202210.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2210",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633220",
+      "part": "30 63 3220",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20322.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3220",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639690",
+      "part": "30 63 9690",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20969.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9690",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636672",
+      "part": "30 63 6672",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206672.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6672",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636722",
+      "part": "30 63 6722",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206722.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6722",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635514",
+      "part": "30 63 5514",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205514_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5514",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635924",
+      "part": "30 63 5924",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205924_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5924",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632406",
+      "part": "30 63 2406",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202406_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2406",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634586",
+      "part": "30 63 4586",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204586_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4586",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642422",
+      "part": "30 64 2422",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2422",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642532",
+      "part": "30 64 2532",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202532.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2532",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647652",
+      "part": "30 64 7652",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207652.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7652",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647143",
+      "part": "30 64 7143",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207143_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7143",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648015",
+      "part": "30 64 8015",
+      "name": "Shield, medium",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208015.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8015",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629740",
+      "part": "30 62 9740",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%20974.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9740",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623523",
+      "part": "30 62 3523",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203523.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3523",
+      "color": "dark orange",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639040",
+      "part": "30 63 9040",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20904.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9040",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630052",
+      "part": "30 63 0052",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200052.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0052",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633752",
+      "part": "30 63 3752",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203752.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3752",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30637602",
+      "part": "30 63 7602",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%207602.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-7602",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30637612",
+      "part": "30 63 7612",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%207612.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-7612",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639192",
+      "part": "30 63 9192",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209192.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9192",
+      "color": "rust",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30637134",
+      "part": "30 63 7134",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%207134.png",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-7134",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644272",
+      "part": "30 64 4272",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%204272.png",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4272",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647392",
+      "part": "30 64 7392",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207392.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7392",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647623",
+      "part": "30 64 7623",
+      "name": "Shield, oval",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207623_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7623",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p5596b3",
+      "part": "p5596b3",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p5596b3.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p5596b3",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p5596b4",
+      "part": "p5596b4",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p5596b4.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p5596b4",
+      "color": "green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622183",
+      "part": "30 62 2183",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202183_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2183",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622323",
+      "part": "30 62 2323",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202323.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2323",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623203",
+      "part": "30 62 3203",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203203.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3203",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623353",
+      "part": "30 62 3353",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203353_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3353",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30628733",
+      "part": "30 62 8733",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%208733.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-8733",
+      "color": "one of…",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30628743",
+      "part": "30 62 8743",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%208743.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-8743",
+      "color": "one of…",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622586",
+      "part": "30 62 2586",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202586_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2586",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629326",
+      "part": "30 62 9326",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209326.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9326",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30638873",
+      "part": "30 63 8873",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%208873.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-8873",
+      "color": "yellow/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632634",
+      "part": "30 63 2634",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202634_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2634",
+      "color": "dark blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635224",
+      "part": "30 63 5224",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205224_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5224",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636344",
+      "part": "30 63 6344",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6344",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635495",
+      "part": "30 63 5495",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205495_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5495",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30640153",
+      "part": "30 64 0153",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%200153.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-0153",
+      "color": "?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30649903",
+      "part": "30 64 9903",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%209903.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-9903",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643364",
+      "part": "30 64 3364",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203364_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3364",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30640835",
+      "part": "30 64 0835",
+      "name": "Shield, peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%200835_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-0835",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635214",
+      "part": "30 63 5214",
+      "name": "Shield, pointed-arch top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205214_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5214",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642002",
+      "part": "30 64 2002",
+      "name": "Shield, pointed-arch top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202002.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2002",
+      "color": "white/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642012",
+      "part": "30 64 2012",
+      "name": "Shield, pointed-arch top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202012.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2012",
+      "color": "white/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642022",
+      "part": "30 64 2022",
+      "name": "Shield, pointed-arch top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202022.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2022",
+      "color": "white/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642032",
+      "part": "30 64 2032",
+      "name": "Shield, pointed-arch top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202032.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2032",
+      "color": "white/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30620985",
+      "part": "30 62 0985",
+      "name": "Shield, pointed-arch top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%200985_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-0985",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p3338a",
+      "part": "p3338a",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p3338a.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p3338a",
+      "color": "clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623213",
+      "part": "30 62 3213",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203213.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3213",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30620166",
+      "part": "30 62 0166",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%200166_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-0166",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632873",
+      "part": "30 63 2873",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202873_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2873",
+      "color": "black/clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636275",
+      "part": "30 63 6275",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206275_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6275",
+      "color": "black/clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30048144",
+      "part": "30 04 8144",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-04-8144",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630948",
+      "part": "30 63 0948",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0948",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631523",
+      "part": "30 63 1523",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201523_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1523",
+      "color": "black/clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30640372",
+      "part": "30 64 0372",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%200372.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-0372",
+      "color": "black/clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648373",
+      "part": "30 64 8373",
+      "name": "Shield, riot",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208373.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8373",
+      "color": "black/clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635185",
+      "part": "30 63 5185",
+      "name": "Shield, round, indented two sides, handgrips on ends",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205185_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5185",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30048060",
+      "part": "30 04 8060",
+      "name": "Shield, round, inside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/04/30%2004%208060_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-04-8060",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30076510",
+      "part": "30 07 6510",
+      "name": "Shield, round, inside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/07/30%2007%206510_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-07-6510",
+      "color": "light grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30217930",
+      "part": "30 21 7930",
+      "name": "Shield, round, inside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/21/30%2021%207930_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-21-7930",
+      "color": "gold?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:35217930",
+      "part": "35 21 7930",
+      "name": "Shield, round, inside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/21/35%2021%207930.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=35-21-7930",
+      "color": "bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30076500",
+      "part": "30 07 6500",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/07/30%2007%206500_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-07-6500",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30091850",
+      "part": "30 09 1850",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/09/30%2009%20185.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-09-1850",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30294280",
+      "part": "30 29 4280",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/29/30%2029%204280.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-29-4280",
+      "color": "light red-brown",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30628740",
+      "part": "30 62 8740",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%208740.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-8740",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30048070",
+      "part": "30 04 8070",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/04/30%2004%208070_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-04-8070",
+      "color": "dark brown",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30048872",
+      "part": "30 04 8872",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/04/30%2004%208872_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-04-8872",
+      "color": "light grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30056143",
+      "part": "30 05 6143",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-05-6143",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30071772",
+      "part": "30 07 1772",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/07/30%2007%201772.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-07-1772",
+      "color": "dark metal",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30228310",
+      "part": "30 22 8310",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/22/30%2022%208310.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-22-8310",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30256513",
+      "part": "30 25 6513",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/25/30%2025%206513_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-25-6513",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30641556",
+      "part": "30 64 1556",
+      "name": "Shield, round, outside frame",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%201556_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-1556#subparts",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30073200",
+      "part": "30 07 3200",
+      "name": "Shield, round, small / buckler",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/07/30%2007%203200_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-07-3200",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30281140",
+      "part": "30 28 1140",
+      "name": "Shield, round, small / buckler",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/28/30%2028%201140.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-28-1140",
+      "color": "clear",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632500",
+      "part": "30 63 2500",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20250.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2500",
+      "color": "mustard/black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632510",
+      "part": "30 63 2510",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20251.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2510",
+      "color": "orange/green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632650",
+      "part": "30 63 2650",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20265.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2650",
+      "color": "mustard",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632740",
+      "part": "30 63 2740",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20274.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2740",
+      "color": "cream",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633980",
+      "part": "30 63 3980",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203980.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3980",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30638960",
+      "part": "30 63 8960",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20896.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-8960",
+      "color": "?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p3732a",
+      "part": "p3732a",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p3732a.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p3732a",
+      "color": "tan",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p3732c",
+      "part": "p3732c",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p3732c.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p3732c",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4569a",
+      "part": "p4569a",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4569a.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4569a",
+      "color": "yellow-tan",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p9146i1",
+      "part": "p9146i1",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p9146i1.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p9146i1",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30218160",
+      "part": "30 21 8160",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-21-8160",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623433",
+      "part": "30 62 3433",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203433.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3433",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626253",
+      "part": "30 62 6253",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206253_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6253",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626733",
+      "part": "30 62 6733",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206733_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6733",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30620825",
+      "part": "30 62 0825",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-0825",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625115",
+      "part": "30 62 5115",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p9150a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5115",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30627786",
+      "part": "30 62 7786",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%207786.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-7786",
+      "color": "dull bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629046",
+      "part": "30 62 9046",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209046_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9046",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632950",
+      "part": "30 63 2950",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202950.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2950",
+      "color": "yellow/white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633060",
+      "part": "30 63 3060",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20306.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3060",
+      "color": "mustard",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633070",
+      "part": "30 63 3070",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203070.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3070",
+      "color": "green/mustard",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30638780",
+      "part": "30 63 8780",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%208780_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-8780#subparts",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639152",
+      "part": "30 63 9152",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209152.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9152",
+      "color": "blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630583",
+      "part": "30 63 0583",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200583.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0583",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30640420",
+      "part": "30 64 0420",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%200420.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-0420",
+      "color": "tan",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647642",
+      "part": "30 64 7642",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207642.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7642",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647982",
+      "part": "30 64 7982",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207982.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7982",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30646753",
+      "part": "30 64 6753",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%206753_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-6753",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648686",
+      "part": "30 64 8686",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8686",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626263",
+      "part": "30 62 6263",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206263_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6263",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622546",
+      "part": "30 62 2546",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202546_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2546",
+      "color": "pale blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624016",
+      "part": "30 62 4016",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204016_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4016",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624026",
+      "part": "30 62 4026",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204026_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4026",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30621068",
+      "part": "30 62 1068",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-1068",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622488",
+      "part": "30 62 2488",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2488",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622498",
+      "part": "30 62 2498",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2498",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625928",
+      "part": "30 62 5928",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5928",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626028",
+      "part": "30 62 6028",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6028",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626208",
+      "part": "30 62 6208",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206208.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6208",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632350",
+      "part": "30 63 2350",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202350.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2350",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633080",
+      "part": "30 63 3080",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203080.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3080",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632412",
+      "part": "30 63 2412",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202412.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2412",
+      "color": "dark red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632432",
+      "part": "30 63 2432",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202432.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2432",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630593",
+      "part": "30 63 0593",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%200593.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0593",
+      "color": "white",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639213",
+      "part": "30 63 9213",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209213.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9213",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635504",
+      "part": "30 63 5504",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205504_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5504",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635485",
+      "part": "30 63 5485",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205485_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5485",
+      "color": "dark turquoise",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632486",
+      "part": "30 63 2486",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202486_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2486",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634177",
+      "part": "30 63 4177",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204177.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4177",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632018",
+      "part": "30 63 2018",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202018.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2018",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632028",
+      "part": "30 63 2028",
+      "name": "Shield, round, smooth surface",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2028",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30646283",
+      "part": "30 64 6283",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%206283.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-6283#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30649945",
+      "part": "30 64 9945",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%209945.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-9945#subparts",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4745a",
+      "part": "p4745a",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4745a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4745a",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4769a",
+      "part": "p4769a",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4769a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4769a",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p5596b7",
+      "part": "p5596b7",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p5596b7.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p5596b7",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p9146f2",
+      "part": "p9146f2",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p9146f2.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p9146f2",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30228320",
+      "part": "30 22 8320",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/22/30%2022%208320.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-22-8320",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626782",
+      "part": "30 62 6782",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206782.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6782",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631962",
+      "part": "30 63 1962",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201962.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1962",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636923",
+      "part": "30 63 6923",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206923.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6923",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642622",
+      "part": "30 64 2622",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202622.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2622#subparts",
+      "color": "grey/green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643642",
+      "part": "30 64 3642",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203642.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3642",
+      "color": "bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647162",
+      "part": "30 64 7162",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207162.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7162",
+      "color": "black/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648042",
+      "part": "30 64 8042",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208042.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8042",
+      "color": "light brown",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648142",
+      "part": "30 64 8142",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208142.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8142#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648812",
+      "part": "30 64 8812",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8812",
+      "color": "grey?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30073733",
+      "part": "30 07 3733",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/07/30%2007%203733.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-07-3733",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30213203",
+      "part": "30 21 3203",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/21/30%2021%203203_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-21-3203",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30628838",
+      "part": "30 62 8838",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%208838.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-8838#subparts",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631094",
+      "part": "30 63 1094",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201094.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1094",
+      "color": "black/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631334",
+      "part": "30 63 1334",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1334",
+      "color": "grey?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631344",
+      "part": "30 63 1344",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201344.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1344",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631354",
+      "part": "30 63 1354",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1354",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631364",
+      "part": "30 63 1364",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1364",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631384",
+      "part": "30 63 1384",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201384_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1384#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631394",
+      "part": "30 63 1394",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201394_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1394#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631404",
+      "part": "30 63 1404",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201404_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1404#subparts",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631414",
+      "part": "30 63 1414",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201414.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1414#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631424",
+      "part": "30 63 1424",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201424_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1424#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631434",
+      "part": "30 63 1434",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201434.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1434",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631444",
+      "part": "30 63 1444",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201444_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1444",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631464",
+      "part": "30 63 1464",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%201464.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1464",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30631494",
+      "part": "30 63 1494",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-1494",
+      "color": "gold?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636244",
+      "part": "30 63 6244",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6244",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635195",
+      "part": "30 63 5195",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205195_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5195#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647003",
+      "part": "30 64 7003",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207003_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7003",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30646874",
+      "part": "30 64 6874",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%206874_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-6874",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648005",
+      "part": "30 64 8005",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208005_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8005",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648025",
+      "part": "30 64 8025",
+      "name": "Shield, round, with centre boss",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208025.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8025",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30516962",
+      "part": "30 51 6962",
+      "name": "Shield, round, with centre boss (set of 8)",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/5/51/30%2051%206962.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-51-6962#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30621556",
+      "part": "30 62 1556",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%201556_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-1556",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629996",
+      "part": "30 62 9996",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209996_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9996",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639626",
+      "part": "30 63 9626",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209626_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9626",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633623",
+      "part": "30 63 3623",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203623_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3623",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636833",
+      "part": "30 63 6833",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206833.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6833",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635714",
+      "part": "30 63 5714",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205714_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5714",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639414",
+      "part": "30 63 9414",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209414_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9414",
+      "color": "light grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645482",
+      "part": "30 64 5482",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%205482.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5482",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647302",
+      "part": "30 64 7302",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207302_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7302",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648132",
+      "part": "30 64 8132",
+      "name": "Shield, sides of circle cut away in round indentations",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%208132.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8132",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30027230",
+      "part": "30 02 7230",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/02/30%2002%20723.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-02-7230",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644830",
+      "part": "30 64 4830",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20483.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4830",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645240",
+      "part": "30 64 5240",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20524.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5240",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30023412",
+      "part": "30 02 3412",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/0/02/30%2002%203412_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-02-3412",
+      "color": "purple",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30204914",
+      "part": "30 20 4914",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-4914",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30204944",
+      "part": "30 20 4944",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-4944",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30216023",
+      "part": "30 21 6023",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-21-6023",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30257742",
+      "part": "30 25 7742",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/25/30%2025%207742_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-25-7742",
+      "color": "purple",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30262200",
+      "part": "30 26 2200",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/26/30%2026%202200.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-26-2200",
+      "color": "light brown",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30630620",
+      "part": "30 63 0620",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20062.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-0620",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645250",
+      "part": "30 64 5250",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20525.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5250",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645260",
+      "part": "30 64 5260",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%20526.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5260",
+      "color": "yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30644222",
+      "part": "30 64 4222",
+      "name": "Shield, small",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%204222.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4222",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30270220",
+      "part": "30 27 0220",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/27/30%2027%200220.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-27-0220",
+      "color": "light brown",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624865",
+      "part": "30 62 4865",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204865.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4865",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30628448",
+      "part": "30 62 8448",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-8448",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633522",
+      "part": "30 63 3522",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203522.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3522#subparts",
+      "color": "tan",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634862",
+      "part": "30 63 4862",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204862.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4862",
+      "color": "black?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639092",
+      "part": "30 63 9092",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%209092.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9092",
+      "color": "light brown",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643232",
+      "part": "30 64 3232",
+      "name": "Shield, small, rounded bottom",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203232.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3232",
+      "color": "tan",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30033784",
+      "part": "30 03 3784",
+      "name": "Shield, small, with peaked top",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-03-3784",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30204874",
+      "part": "30 20 4874",
+      "name": "Shield, small, with peaked top",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-4874",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30234482",
+      "part": "30 23 4482",
+      "name": "Shield, small, with peaked top",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-23-4482",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629723",
+      "part": "30 62 9723",
+      "name": "Shield, small, with peaked top",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209723_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9723",
+      "color": "grey/red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624192",
+      "part": "30 62 4192",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204192.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4192",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30624962",
+      "part": "30 62 4962",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%204962.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-4962",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625372",
+      "part": "30 62 5372",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5372",
+      "color": "?",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4430a",
+      "part": "p4430a",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4430a.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4430a",
+      "color": "shiny gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p4434a",
+      "part": "p4434a",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p4434a.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p4434a",
+      "color": "shiny silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p5731a",
+      "part": "p5731a",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p5731a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p5731a",
+      "color": "red",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:p5888a",
+      "part": "p5888a",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/a/p5888a.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=p5888a",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30623262",
+      "part": "30 62 3262",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%203262.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-3262",
+      "color": "purple/yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625722",
+      "part": "30 62 5722",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205722.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5722#subparts",
+      "color": "grey/green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634360",
+      "part": "30 63 4360",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20436.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4360#subparts",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632722",
+      "part": "30 63 2722",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202722.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2722",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30634162",
+      "part": "30 63 4162",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%204162.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-4162#subparts",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30207960",
+      "part": "30 20 7960",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/20/30%2020%207960_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-7960",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30212110",
+      "part": "30 21 2110",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/2/21/30%2021%202110_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-21-2110",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30621970",
+      "part": "30 62 1970",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%201970.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-1970",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30628230",
+      "part": "30 62 8230",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%208230.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-8230",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625242",
+      "part": "30 62 5242",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205242.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5242",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625352",
+      "part": "30 62 5352",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205352.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5352#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625462",
+      "part": "30 62 5462",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205462.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5462#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625642",
+      "part": "30 62 5642",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205642.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5642",
+      "color": "blue",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30625712",
+      "part": "30 62 5712",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%205712.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-5712#subparts",
+      "color": "gold",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629442",
+      "part": "30 62 9442",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209442.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9442#subparts",
+      "color": "gold/green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622433",
+      "part": "30 62 2433",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202433_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2433",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30622443",
+      "part": "30 62 2443",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%202443.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-2443",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626393",
+      "part": "30 62 6393",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206393.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6393#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30626403",
+      "part": "30 62 6403",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%206403_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-6403",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30629153",
+      "part": "30 62 9153",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%209153.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-9153",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30627586",
+      "part": "30 62 7586",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/62/30%2062%207586_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-62-7586",
+      "color": "silver-grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639650",
+      "part": "30 63 9650",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%20965.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9650#subparts",
+      "color": "grey/blue/yellow",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636032",
+      "part": "30 63 6032",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206032.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6032",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636662",
+      "part": "30 63 6662",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206662.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6662",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30636682",
+      "part": "30 63 6682",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%206682.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-6682",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30638982",
+      "part": "30 63 8982",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%208982.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-8982",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30633753",
+      "part": "30 63 3753",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%203753.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-3753",
+      "color": "dark metal",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30638863",
+      "part": "30 63 8863",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%208863.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-8863#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30632614",
+      "part": "30 63 2614",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%202614_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-2614",
+      "color": "green",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635414",
+      "part": "30 63 5414",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205414_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5414",
+      "color": "dark grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30635295",
+      "part": "30 63 5295",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/63/30%2063%205295_online.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-5295#subparts",
+      "color": "light grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30639968",
+      "part": "30 63 9968",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-63-9968",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30642582",
+      "part": "30 64 2582",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%202582.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-2582",
+      "color": "black",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30643662",
+      "part": "30 64 3662",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%203662.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-3662",
+      "color": "bronze",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30647662",
+      "part": "30 64 7662",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%207662.gif",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-7662",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30648602",
+      "part": "30 64 8602",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-8602",
+      "color": "",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30645673",
+      "part": "30 64 5673",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%205673.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-5673",
+      "color": "silver",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30641164",
+      "part": "30 64 1164",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%201164_online(2).jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-1164#subparts",
+      "color": "grey",
+      "category": "shields"
+    },
+    {
+      "id": "playmodb:30646704",
+      "part": "30 64 6704",
+      "name": "Shield, teardrop-shaped",
+      "type": "Other",
+      "image": "https://playmodb.org/parts/6/64/30%2064%206704.jpg",
+      "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-6704",
+      "color": "gold",
+      "category": "shields"
+    }
+  ],
+  "itemsFound": 367,
+  "diagnostic": "Items returned"
+}
