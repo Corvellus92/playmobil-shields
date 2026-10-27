@@ -21,5 +21,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ ! -f helmets-catalog.json ]; then echo 'Missing catalog output'; exit 1; fi
+          python -c "import json; d=json.load(open('helmets-catalog.json')); print('Import report: pages', d.get('pagesSucceeded'), '/23, items:', d.get('itemsFound'), 'errors:', len(d.get('errors', [])))"
           git add helmets-catalog.json
           git diff --cached --quiet || (git commit -m "Update PlaymoDB helmets catalog" && git push)
