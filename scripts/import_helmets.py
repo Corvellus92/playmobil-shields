@@ -59,10 +59,10 @@ def main():
    html=fetch(page);p=Table();p.feed(html);added=0
    for row in p.rows:
     # Require a part-detail link; do not turn navigation links into inventory items.
-    partlinks=[(url,label) for url,label in row['links'] if 'part' in url.lower() or re.fullmatch(r'\\d{7,10}[a-z]?',label,re.I)]
+    partlinks=[(url,label) for url,label in row['links'] if 'part' in url.lower() or re.fullmatch(r'\d{7,10}[a-z]?',label,re.I)]
     if not partlinks:continue
     link,label=partlinks[0]
-    match=re.search(r'(?<!\\d)(\\d{7,10}[a-z]?)(?!\\d)',label+' '+link,re.I)
+    match=re.search(r'(?<!\d)(\d{7,10}[a-z]?)(?!\d)',label+' '+link,re.I)
     if not match:continue
     part=match.group(1)
     desc=next((c for c in row['cells'] if c and c!=part and len(c)>5 and not c.isdigit()),'')
@@ -75,7 +75,7 @@ def main():
   except Exception as exc:errors.append({'page':page,'error':str(exc)[:200]});print('FAILED page',page,str(exc)[:160])
   time.sleep(.2)
  payload={'source':BASE+'/cgi-bin/category.pl?category=Wearable-Headwear%2CHard','pagesAttempted':23,'pagesSucceeded':successful,'status':'ok' if successful==23 else 'partial','errors':errors,'items':list(items.values())}
- if items:DEST.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\\n',encoding='utf-8')
+ if items:DEST.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  else:print('No verified items: preserving previous file')
  print('Total parts:',len(items),'pages:',successful,'errors:',len(errors))
 if __name__=='__main__':main()
