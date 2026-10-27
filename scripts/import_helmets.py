@@ -48,6 +48,35 @@ class Table(HTMLParser):
   if t in ('td','th') and self.row is not None and self.in_td:self.row['cells'].append(' '.join(self.buf.split()));self.in_td=False
   if t=='a':self.in_anchor=False
   if t=='tr' and self.row is not None:self.rows.append(self.row);self.row=None
+class LineupParser(HTMLParser):
+ def __init__(self):
+  super().__init__();self.entries=[];self.current=None;self.depth=0;self.field=None
+ def handle_starttag(self,tag,attrs):
+  attrs=dict(attrs);classes=attrs.get('class','').split()
+  if tag=='div' and 'lineup' in classes and self.current is None:
+   self.current={'part':'','name':'','image':'','source':'','color':''};self.depth=1;self.field=None;return
+  if self.current is None:return
+  if tag=='div':
+   self.depth+=1
+   if 'listpartnumber' in classes:self.field='part'
+   elif 'listpartname' in classes:self.field='name'
+  elif tag=='a' and 'showpart.pl' in attrs.get('href','') and not self.current['source']:
+   self.current['source']=urllib.parse.urljoin(BASE,attrs['href'])
+  elif tag=='img':
+   src=attrs.get('src','')
+   if '/parts/' in src and not self.current['image']:self.current['image']=urllib.parse.urljoin(BASE,src)
+  elif tag=='small':self.field='color'
+ def handle_data(self,data):
+  if self.current is not None and self.field:
+   self.current[self.field]+=data
+ def handle_endtag(self,tag):
+  if self.current is None:return
+  if tag=='small':self.field=None
+  if tag=='div':
+   self.depth-=1;self.field=None
+   if self.depth==0:
+    self.entries.append(self.current);self.current=None
+
 def main():
  old={}
  if DEST.exists():
@@ -56,34 +85,19 @@ def main():
  items=dict(old);successful=0;errors=[];samples=[]
  for page in range(1,24):
   try:
-   html=fetch(page);p=Table();p.feed(html);added=0
-   if page in (1,2):
-    pos=html.find('Displaying parts')
-    if pos<0:pos=len(html)//3
-    samples.append({'page':page,'htmlLength':len(html),'rows':len(p.rows),
-     'itemMarkupSample':html[min(len(html),pos+500):min(len(html),pos+11500)],
-     'htmlEnd':html[-2500:],
-     'partLinkCount':len(re.findall(r'showpart|partnum|part\.pl',html,re.I))})
-  
-   for row in p.rows:
-    # Require a part-detail link; do not turn navigation links into inventory items.
-    # PlaymoDB displays numbers both as links and as ordinary table text.
-    raw=' | '.join(row['cells'])
-    numbers=re.findall(r'(?<![0-9])(?:[0-9]{2}[ -]?[0-9]{2}[ -]?[0-9]{4}|[0-9]{8}|[pk][0-9]{3,7})(?![0-9])',raw,re.I)
-    partlinks=[(url,label) for url,label in row['links'] if 'showpart.pl' in url.lower() or 'partnum=' in url.lower()]
-    if not numbers and not partlinks:continue
-    link,label=partlinks[0] if partlinks else ('','')
-    fromlink=re.search(r'partnum=([^&]+)',link,re.I)
-    candidate=numbers[0] if numbers else urllib.parse.unquote_plus(fromlink.group(1)) if fromlink else ''
-    part=re.sub(r'[\\s-]+','',candidate)
-    if not re.fullmatch(r'(?:[0-9]{8}|[pk][0-9]{3,7})',part,re.I):continue
-    desc=next((c for c in row['cells'] if c and c.strip()!=candidate.strip() and c.strip()!=part and len(c)>4 and not c.isdigit()),'')
-    image=next((url for url in row['images'] if 'blank' not in url.lower()),'')
-    source=urllib.parse.urljoin(BASE+'/','/cgi-bin/showpart.pl?partnum='+urllib.parse.quote(part)) if not link else urllib.parse.urljoin(BASE+'/',link)
-    key='playmodb:'+part
-    items[key]={'id':key,'part':part,'name':desc or part,'type':'Other','image':image,'source':source,'category':'helmets'}
+   html=fetch(page);p=LineupParser();p.feed(html);added=0
+   if page in (1,2):samples.append({'page':page,'htmlLength':len(html),'lineups':len(p.entries),'firstEntries':p.entries[:3]})
+   for row in p.entries:
+    part=' '.join(row['part'].split())
+    if not part:continue
+    compact=re.sub(r'[^a-zA-Z0-9]','',part)
+    if len(compact)<4:continue
+    desc=' '.join(row['name'].split())
+    source=row['source'] or BASE+'/cgi-bin/showpart.pl?partnum='+urllib.parse.quote(part.replace(' ','-'))
+    key='playmodb:'+compact
+    items[key]={'id':key,'part':part,'name':desc or part,'type':'Other','image':row['image'],'source':source,'color':' '.join(row['color'].split()),'category':'helmets'}
     added+=1
-   successful+=1;print('Page',page,'rows',len(p.rows),'part candidates',added)
+   successful+=1;print('Page',page,'lineups',len(p.entries),'part candidates',added)
   except Exception as exc:errors.append({'page':page,'error':str(exc)[:200]});print('FAILED page',page,str(exc)[:160])
   time.sleep(.2)
  payload={'source':BASE+'/cgi-bin/category.pl?category=Wearable-Headwear%2CHard','pagesAttempted':23,'pagesSucceeded':successful,'status':'ok' if successful==23 else 'partial','errors':errors,'parserSamples':samples,'items':list(items.values())}
