@@ -1,74 +1,114 @@
 #!/usr/bin/env python3
-"""Best-effort image catalog from Animobil's public shield index.
-No guessed image filenames: only paths found in downloaded HTML are emitted.
-"""
-import json, re, time, urllib.request
-from pathlib import Path
+"""Sync exact Animobil shield image URLs, preserving prior verified mappings."""
+import json
+import re
+import time
+import urllib.request
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
-from urllib.parse import urljoin, urlparse
+from pathlib import Path
+from urllib.parse import urljoin, urlparse, unquote
 
-BASE='https://animobil.info/shields/'
-INDEX=BASE+'text/wit-toc.html'
-class Parser(HTMLParser):
+ROOT = 'https://animobil.info'
+INDEX = ROOT + '/shields/text/wit-toc.html'
+KNOWN = {'30038545': ['https://animobil.info/shields/wit-icons/30038545-30822346a.png']}
+OUTPUT = Path('animobil-images.json')
+CATEGORIES_JS = Path('app.js')
+TIMEOUT = 9
+
+class Links(HTMLParser):
     def __init__(self):
         super().__init__()
-        self.urls=[]
+        self.links = []
     def handle_starttag(self, tag, attrs):
-        attrs=dict(attrs)
-        for key in ('src','href'):
-            if attrs.get(key): self.urls.append(attrs[key])
+        props = dict(attrs)
+        for key in ('src', 'href', 'data-src'):
+            if props.get(key):
+                self.links.append(props[key])
 
-def get(url):
-    req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; PlaymobilShieldsCollector/1.0)'})
-    with urllib.request.urlopen(req, timeout=25) as response:
-        return response.read().decode('utf-8','replace')
+def fetch(url):
+    request = urllib.request.Request(url, headers={
+        'User-Agent': 'Mozilla/5.0 (compatible; PlaymobilCatalog/1.0)',
+        'Accept': 'text/html,application/xhtml+xml'})
+    with urllib.request.urlopen(request, timeout=TIMEOUT) as response:
+        return response.read().decode('utf-8', errors='replace')
 
-def collect():
-    urls=[INDEX]
-    # The known shield photo remains usable if Animobil blocks requests.
-    images={'30038545': {'https://animobil.info/shields/wit-icons/30038545-30822346a.png'}}
-    visited=set()
-    errors=[]
-    while urls and len(visited)<550:
-        url=urls.pop(0)
-        if url in visited: continue
-        visited.add(url)
-        try: raw=get(url)
-        except Exception as exc:
-            errors.append(str(exc)[:160]+' at '+url)
+def category_urls():
+    urls = {INDEX}
+    try:
+        text = CATEGORIES_JS.read_text(encoding='utf-8')
+        # Categories are a constant JS literal of known Animobil pages.
+        urls.update(re.findall(r'https://animobil\.info/shields/text/[^"\s]+\.html', text))
+    except OSError as exc:
+        print('Cannot read category list:', exc)
+    return sorted(urls)
+
+def scan_page(url):
+    body = fetch(url)
+    parser = Links()
+    parser.feed(body)
+    urls = set(urljoin(url, unquote(link)) for link in parser.links)
+    # Some pages contain image URLs as strings rather than HTML attributes.
+    for filename in re.findall(r'\b\d{8}-[A-Za-z0-9_-]+\.(?:png|jpg|jpeg|webp)\b', body, flags=re.I):
+        urls.add(ROOT + '/shields/wit-icons/' + filename)
+    found = {}
+    for absolute in urls:
+        parts = urlparse(absolute)
+        if parts.netloc not in ('animobil.info', 'www.animobil.info'):
             continue
-        parser=Parser(); parser.feed(raw)
-        for path in parser.urls:
-            u=urljoin(url,path)
-            parsed=urlparse(u)
-            if parsed.netloc not in ('animobil.info','www.animobil.info'):continue
-            if '/shields/wit-icons/' in parsed.path and re.search(r'\.(png|jpe?g|webp)$',parsed.path,re.I):
-                name=parsed.path.rsplit('/',1)[-1]
-                m=re.match(r'^(\d{8})-',name)
-                if m:
-                    part=m.group(1)
-                    images.setdefault(part,set()).add('https://animobil.info'+parsed.path)
-            if parsed.path.startswith('/shields/text/') and parsed.path.endswith('.html') and u not in visited and u not in urls:
-                urls.append(u)
-        time.sleep(.12)
-    return {k:sorted(v) for k,v in sorted(images.items())},len(visited),errors
+        if not parts.path.startswith('/shields/wit-icons/'):
+            continue
+        filename = parts.path.rsplit('/', 1)[-1]
+        m = re.fullmatch(r'(\d{8})-[A-Za-z0-9_-]+\.(?:png|jpg|jpeg|webp)', filename, flags=re.I)
+        if m:
+            found.setdefault(m.group(1), set()).add(ROOT + parts.path)
+    return found
 
-if __name__=='__main__':
-    images,count,errors=collect()
-    path=Path('animobil-images.json')
-    if path.exists():
+def main():
+    images = {k: set(v) for k, v in KNOWN.items()}
+    if OUTPUT.exists():
         try:
-            old=json.loads(path.read_text(encoding='utf-8'))
-            for part,links in old.get('imageMap',{}).items():
-                if re.fullmatch(r'\d{8}',part) and isinstance(links,list):
-                    images.setdefault(part,[])
-                    images[part]=sorted(set(images[part])|{link for link in links if isinstance(link,str) and link.startswith('https://animobil.info/shields/wit-icons/')})
-        except (OSError,ValueError,TypeError) as exc:
-            print('Previous catalog could not be loaded:',exc)
-    data={'source':INDEX,'imageMap':images,'pagesScanned':count,
-          'status':'partial' if errors else 'ok',
-          'errorCount':len(errors)}
-    path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-    print('Image keys:',len(images),'pages:',count,'errors:',len(errors),
-          'status:',data['status'])
-    if errors: print('First scrape error:',errors[0])
+            previous = json.loads(OUTPUT.read_text(encoding='utf-8'))
+            for part, links in previous.get('imageMap', {}).items():
+                if re.fullmatch(r'\d{8}', part) and isinstance(links, list):
+                    images.setdefault(part, set()).update(
+                        u for u in links if isinstance(u, str)
+                        and u.startswith(ROOT + '/shields/wit-icons/'))
+        except (OSError, ValueError, TypeError) as exc:
+            print('Previous index unreadable:', exc)
+    urls = category_urls()
+    errors = []
+    successful = 0
+    newly_seen = set()
+    # Bounded worker pool; avoid serial 9-second timeouts for each category.
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        futures = {executor.submit(scan_page, url): url for url in urls}
+        for future in as_completed(futures):
+            url = futures[future]
+            try:
+                result = future.result()
+                successful += 1
+                for part, links in result.items():
+                    newly_seen.update(links - images.get(part, set()))
+                    images.setdefault(part, set()).update(links)
+            except Exception as exc:
+                errors.append({'url': url, 'error': str(exc)[:150]})
+    payload = {
+        'source': INDEX,
+        'imageMap': {part: sorted(links) for part, links in sorted(images.items())},
+        'pagesScanned': successful,
+        'pagesAttempted': len(urls),
+        'status': 'ok' if not errors else 'partial',
+        'errorCount': len(errors),
+        'newImageCount': len(newly_seen),
+        'errorsSample': errors[:5]
+    }
+    OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print('Pages OK:', successful, '/', len(urls), '| unique parts:', len(images),
+          '| new image links:', len(newly_seen), '| failed:', len(errors))
+    if errors:
+        print('First error:', errors[0])
+        print('PARTIAL SUCCESS: do not interpret green workflow run as full catalog coverage.')
+
+if __name__ == '__main__':
+    main()
