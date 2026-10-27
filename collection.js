@@ -9,6 +9,9 @@ let records=[];
 try{const data=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(data))records=data.filter(x=>x&&typeof x.key==='string')}catch{}
 let selected=null;
 let catalog=[];
+const hiddenKey='playmobil-'+section+'-hidden-v16';
+let hidden=new Set();try{const x=JSON.parse(localStorage.getItem(hiddenKey)||'[]');if(Array.isArray(x))hidden=new Set(x)}catch{}
+function saveHidden(){localStorage.setItem(hiddenKey,JSON.stringify([...hidden]))}
 const catalogOwnedKey='playmobil-'+section+'-catalog-owned-v15';
 let catalogOwned=new Set();
 const editsKey='playmobil-'+section+'-catalog-edits-v15';
@@ -26,7 +29,7 @@ async function loadCatalog(){
   render();
  }catch(e){$('catalogStatus').textContent='PlaymoDB: az automatikus katalógus még nem érhető el';}
 }
-function allEntries(){return [...catalog.filter(x=>!records.some(y=>y.key===x.id)).map(x=>({key:x.id,name:catalogEdits[x.id]?.name??x.name,part:catalogEdits[x.id]?.part??x.part,type:catalogEdits[x.id]?.type??x.type??'Other',image:catalogEdits[x.id]?.image??x.image,source:catalogEdits[x.id]?.source??x.source,owned:catalogOwned.has(x.id),catalog:true})),...records]}
+function allEntries(){return [...catalog.filter(x=>!hidden.has(x.id)&&!records.some(y=>y.key===x.id)).map(x=>({key:x.id,name:catalogEdits[x.id]?.name??x.name,part:catalogEdits[x.id]?.part??x.part,type:catalogEdits[x.id]?.type??x.type??'Other',image:catalogEdits[x.id]?.image??x.image,source:catalogEdits[x.id]?.source??x.source,owned:catalogOwned.has(x.id),catalog:true})),...records.filter(x=>!hidden.has(x.key))]}
 
 function store(){localStorage.setItem(storageKey,JSON.stringify(records))}
 function validLink(value){if(!value)return true;try{return ['http:','https:'].includes(new URL(value).protocol)}catch{return false}}
@@ -46,7 +49,8 @@ function render(){
  const name=document.createElement('b');name.textContent=entry.name||entry.part||'Névtelen cikk';
  const number=document.createElement('small');number.textContent=entry.part||entry.type||'';
  const details=document.createElement('button');details.className='detailBtn';details.textContent='Részletek';details.onclick=e=>{e.stopPropagation();edit(entry)};
- tile.append(art,name,number,details);tile.onclick=()=>{entry.owned=!entry.owned;if(entry.catalog){if(entry.owned)catalogOwned.add(entry.key);else catalogOwned.delete(entry.key);localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]));}else store();render()};$('grid').append(tile)
+ const remove=document.createElement('button');remove.className='tileRemove';remove.textContent='×';remove.title='Eltávolítás';remove.setAttribute('aria-label','Cikk eltávolítása');remove.onclick=e=>{e.stopPropagation();if(!confirm('Eltávolítod ezt a cikket?'))return;if(entry.catalog){hidden.add(entry.key);saveHidden()}else{records=records.filter(x=>x.key!==entry.key);store()}render()};
+ tile.append(art,name,number,details,remove);tile.onclick=()=>{entry.owned=!entry.owned;if(entry.catalog){if(entry.owned)catalogOwned.add(entry.key);else catalogOwned.delete(entry.key);localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]));}else store();render()};$('grid').append(tile)
  }
  const all=allEntries();$('count').textContent=all.filter(x=>x.owned).length+' / '+all.length+' megvan · '+visible.length+' látható';
 }
@@ -67,7 +71,7 @@ $('save').onclick=()=>{
 };
 $('delete').onclick=()=>{if(!selected||selected.catalog)return;if(!confirm('Biztosan törlöd ezt a cikket?'))return;records=records.filter(x=>x.key!==selected.key);store();$('dialog').close();render()};
 $('search').oninput=render;$('filter').onchange=render;$('typeFilter').onchange=render;$('sort').onchange=render;
-$('export').onclick=()=>{const blob=new Blob([JSON.stringify({version:13,section,records,catalogOwned:[...catalogOwned],catalogEdits},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='playmobil-'+section+'-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
+$('export').onclick=()=>{const blob=new Blob([JSON.stringify({version:13,section,records,catalogOwned:[...catalogOwned],catalogEdits,hiddenKeys:[...hidden]},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='playmobil-'+section+'-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 $('importBtn').onclick=()=>$('importFile').click();
-$('importFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.section!==section||!Array.isArray(obj.records))throw Error('Más kategória vagy hibás mentés');if(!confirm('Felülírod a jelenlegi '+section+' listát?'))return;if(Array.isArray(obj.catalogOwned)){catalogOwned=new Set(obj.catalogOwned.filter(x=>typeof x==='string'));localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]))}if(obj.catalogEdits&&typeof obj.catalogEdits==='object'&&!Array.isArray(obj.catalogEdits)){catalogEdits=obj.catalogEdits;saveCatalogEdits()}records=obj.records.filter(x=>x&&typeof x.key==='string'&&typeof x.name==='string'&&typeof x.part==='string'&&types[section].includes(x.type)&&validLink(x.image||'')&&validLink(x.source||''));store();render()}catch(err){alert('Hibás mentés: '+err.message)}e.target.value=''};
+$('importFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.section!==section||!Array.isArray(obj.records))throw Error('Más kategória vagy hibás mentés');if(!confirm('Felülírod a jelenlegi '+section+' listát?'))return;if(Array.isArray(obj.hiddenKeys)){hidden=new Set(obj.hiddenKeys.filter(x=>typeof x==='string'));saveHidden()}if(Array.isArray(obj.catalogOwned)){catalogOwned=new Set(obj.catalogOwned.filter(x=>typeof x==='string'));localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]))}if(obj.catalogEdits&&typeof obj.catalogEdits==='object'&&!Array.isArray(obj.catalogEdits)){catalogEdits=obj.catalogEdits;saveCatalogEdits()}records=obj.records.filter(x=>x&&typeof x.key==='string'&&typeof x.name==='string'&&typeof x.part==='string'&&types[section].includes(x.type)&&validLink(x.image||'')&&validLink(x.source||''));store();render()}catch(err){alert('Hibás mentés: '+err.message)}e.target.value=''};
 render();loadCatalog();
