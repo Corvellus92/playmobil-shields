@@ -88,8 +88,8 @@ function updateAutomaticImages(){for(const tile of document.querySelectorAll('#g
 async function discoverAnimobil(category){if(!category||category==='all'||scannedCategories.has(category))return;scannedCategories.add(category);
 try{const response=await fetch(categories[category],{mode:'cors'});if(!response.ok)throw Error('HTTP '+response.status);
 const html=await response.text();
-const regex=/(?:https?:\\/\\/animobil\\.info)?\\/?shields\\/wit-icons\\/([a-z0-9_-]+\\.(?:png|jpg|jpeg|webp))/gi;
-for(const match of html.matchAll(regex)){const file=match[1];const part=file.split('-')[0];if(/^\\d{8}$/.test(part))animobilDiscovered.set(part,'https://animobil.info/shields/wit-icons/'+file)}
+const regex=/([0-9]{8}-[a-zA-Z0-9_-]+[.](?:png|jpg|jpeg|webp))/gi;
+for(const match of html.matchAll(regex)){const file=match[1];const part=file.split('-')[0];if(/^[0-9]{8}$/.test(part))animobilDiscovered.set(part,'https://animobil.info/shields/wit-icons/'+file)}
 updateAutomaticImages();
 }catch(err){console.info('Animobil automatikus képfelderítés nem elérhető (lehet CORS tiltás).',err.message)}
 }
