@@ -3,6 +3,7 @@
 No guessed image filenames: only paths found in downloaded HTML are emitted.
 """
 import json, re, time, urllib.request
+from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urljoin, urlparse
 
@@ -24,8 +25,9 @@ def get(url):
 
 def collect():
     urls=[INDEX]
+    # The known shield photo remains usable if Animobil blocks requests.
+    images={'30038545': {'https://animobil.info/shields/wit-icons/30038545-30822346a.png'}}
     visited=set()
-    images={}
     errors=[]
     while urls and len(visited)<550:
         url=urls.pop(0)
@@ -53,8 +55,20 @@ def collect():
 
 if __name__=='__main__':
     images,count,errors=collect()
-    if not images:
-        raise SystemExit('No images collected; keeping existing data untouched. Pages='+str(count)+' errors='+str(errors[:3]))
-    with open('animobil-images.json','w',encoding='utf-8') as f:
-        json.dump({'source':INDEX,'imageMap':images,'pagesScanned':count},f,indent=2)
-    print('Validated part keys:',len(images),'pages:',count,'errors:',len(errors))
+    path=Path('animobil-images.json')
+    if path.exists():
+        try:
+            old=json.loads(path.read_text(encoding='utf-8'))
+            for part,links in old.get('imageMap',{}).items():
+                if re.fullmatch(r'\\d{8}',part) and isinstance(links,list):
+                    images.setdefault(part,[])
+                    images[part]=sorted(set(images[part])|{link for link in links if isinstance(link,str) and link.startswith('https://animobil.info/shields/wit-icons/')})
+        except (OSError,ValueError,TypeError) as exc:
+            print('Previous catalog could not be loaded:',exc)
+    data={'source':INDEX,'imageMap':images,'pagesScanned':count,
+          'status':'partial' if errors else 'ok',
+          'errorCount':len(errors)}
+    path.write_text(json.dumps(data,indent=2,ensure_ascii=False)+'\\n',encoding='utf-8')
+    print('Image keys:',len(images),'pages:',count,'errors:',len(errors),
+          'status:',data['status'])
+    if errors: print('First scrape error:',errors[0])
