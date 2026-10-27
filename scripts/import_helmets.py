@@ -53,28 +53,33 @@ def main():
  if DEST.exists():
   try:old={x['id']:x for x in json.loads(DEST.read_text()).get('items',[]) if x.get('id')}
   except Exception:pass
- items=dict(old);successful=0;errors=[]
+ items=dict(old);successful=0;errors=[];samples=[]
  for page in range(1,24):
   try:
    html=fetch(page);p=Table();p.feed(html);added=0
+   if page in (1,2):samples.append({'page':page,'htmlLength':len(html),'rows':len(p.rows),'firstRows':[{'cells':r['cells'][:5], 'links':r['links'][:3], 'images':r['images'][:2]} for r in p.rows[:12]]})
    for row in p.rows:
     # Require a part-detail link; do not turn navigation links into inventory items.
-    partlinks=[(url,label) for url,label in row['links'] if 'part' in url.lower() or re.fullmatch(r'\d{7,10}[a-z]?',label,re.I)]
-    if not partlinks:continue
-    link,label=partlinks[0]
-    match=re.search(r'(?<!\d)(\d{7,10}[a-z]?)(?!\d)',label+' '+link,re.I)
-    if not match:continue
-    part=match.group(1)
-    desc=next((c for c in row['cells'] if c and c!=part and len(c)>5 and not c.isdigit()),'')
+    # PlaymoDB displays numbers both as links and as ordinary table text.
+    raw=' | '.join(row['cells'])
+    numbers=re.findall(r'(?<![0-9])(?:[0-9]{2}[ -]?[0-9]{2}[ -]?[0-9]{4}|[0-9]{8}|[pk][0-9]{3,7})(?![0-9])',raw,re.I)
+    partlinks=[(url,label) for url,label in row['links'] if 'showpart.pl' in url.lower() or 'partnum=' in url.lower()]
+    if not numbers and not partlinks:continue
+    link,label=partlinks[0] if partlinks else ('','')
+    fromlink=re.search(r'partnum=([^&]+)',link,re.I)
+    candidate=numbers[0] if numbers else urllib.parse.unquote_plus(fromlink.group(1)) if fromlink else ''
+    part=re.sub(r'[\\s-]+','',candidate)
+    if not re.fullmatch(r'(?:[0-9]{8}|[pk][0-9]{3,7})',part,re.I):continue
+    desc=next((c for c in row['cells'] if c and c.strip()!=candidate.strip() and c.strip()!=part and len(c)>4 and not c.isdigit()),'')
     image=next((url for url in row['images'] if 'blank' not in url.lower()),'')
-    source=urllib.parse.urljoin(BASE+'/',link)
+    source=urllib.parse.urljoin(BASE+'/','/cgi-bin/showpart.pl?partnum='+urllib.parse.quote(part)) if not link else urllib.parse.urljoin(BASE+'/',link)
     key='playmodb:'+part
     items[key]={'id':key,'part':part,'name':desc or part,'type':'Other','image':image,'source':source,'category':'helmets'}
     added+=1
    successful+=1;print('Page',page,'rows',len(p.rows),'part candidates',added)
   except Exception as exc:errors.append({'page':page,'error':str(exc)[:200]});print('FAILED page',page,str(exc)[:160])
   time.sleep(.2)
- payload={'source':BASE+'/cgi-bin/category.pl?category=Wearable-Headwear%2CHard','pagesAttempted':23,'pagesSucceeded':successful,'status':'ok' if successful==23 else 'partial','errors':errors,'items':list(items.values())}
+ payload={'source':BASE+'/cgi-bin/category.pl?category=Wearable-Headwear%2CHard','pagesAttempted':23,'pagesSucceeded':successful,'status':'ok' if successful==23 else 'partial','errors':errors,'parserSamples':samples,'items':list(items.values())}
  payload['itemsFound']=len(items)
  payload['diagnostic']='No parts returned; check errors and HTML parsing' if not items else 'Items returned'
  DEST.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
