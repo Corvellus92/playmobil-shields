@@ -1,4 +1,4 @@
-const CACHE='playmobil-collection-v15';
+const CACHE='playmobil-collection-v16';
 const FILES=['./','./index.html','./app.js?v=15','./shields.html','./weapons.html','./helmets.html','./settings.html','./collection.js?v=13','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)));self.skipWaiting()});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))));self.clients.claim()});
