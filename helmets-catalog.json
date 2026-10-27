@@ -4,6 +4,20 @@
   "pagesSucceeded": 23,
   "status": "ok",
   "errors": [],
+  "parserSamples": [
+    {
+      "page": 1,
+      "htmlLength": 40765,
+      "rows": 0,
+      "firstRows": []
+    },
+    {
+      "page": 2,
+      "htmlLength": 40902,
+      "rows": 0,
+      "firstRows": []
+    }
+  ],
   "items": [],
   "itemsFound": 0,
   "diagnostic": "No parts returned; check errors and HTML parsing"
