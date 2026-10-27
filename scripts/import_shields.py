@@ -85,7 +85,7 @@ def main():
  items=dict(old);successful=0;errors=[];samples=[]
  # Determine pagination from the first page instead of assuming the helmet count.
  first=fetch(1)
- total_match=re.search(r'Results:\\s*(\\d+)\\s*parts',first)
+ total_match=re.search(r'Results:\s*(\d+)\s*parts',first)
  total=int(total_match.group(1)) if total_match else 0
  pages=max(1,(total+49)//50) if total else 1
  for page in range(1,pages+1):
