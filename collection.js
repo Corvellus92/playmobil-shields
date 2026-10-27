@@ -3,25 +3,26 @@ const section=location.pathname.endsWith('helmets.html')?'helmets':'weapons';
 const titles={helmets:'🪖 Helmets',weapons:'⚔️ Weapons'};
 const types={weapons:['Sword','Axe','Spear','Bow','Crossbow','Dagger','Mace','Halberd','Staff','Firearm','Other'],helmets:['Knight Helmet','Viking Helmet','Roman Helmet','Medieval Helmet','Modern Helmet','Fantasy Helmet','Hat','Other']};
 const $=id=>document.getElementById(id);
+const typeSettings=JSON.parse(localStorage.getItem('playmobil-types-v15')||'{}');if(Array.isArray(typeSettings[section])&&typeSettings[section].length)types[section]=typeSettings[section];
 const storageKey='playmobil-collection-'+section+'-v11';
 let records=[];
 try{const data=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(data))records=data.filter(x=>x&&typeof x.key==='string')}catch{}
 let selected=null;
 let catalog=[];
-const catalogOwnedKey='playmobil-helmets-catalog-owned-v12';
+const catalogOwnedKey='playmobil-'+section+'-catalog-owned-v15';
 let catalogOwned=new Set();
-const editsKey='playmobil-helmets-catalog-edits-v13';
-let catalogEdits={};try{const v=JSON.parse(localStorage.getItem(editsKey)||'{}');if(v&&typeof v==='object'&&!Array.isArray(v))catalogEdits=v}catch{}
+const editsKey='playmobil-'+section+'-catalog-edits-v15';
+let catalogEdits={};try{const v=JSON.parse(localStorage.getItem(editsKey)||localStorage.getItem(section==='helmets'?'playmobil-helmets-catalog-edits-v13':'_none_')||'{}');if(v&&typeof v==='object'&&!Array.isArray(v))catalogEdits=v}catch{}
 function saveCatalogEdits(){localStorage.setItem(editsKey,JSON.stringify(catalogEdits))}
-try { const saved=JSON.parse(localStorage.getItem(catalogOwnedKey)||'[]');if(Array.isArray(saved))catalogOwned=new Set(saved) } catch {}
+try { const saved=JSON.parse(localStorage.getItem(catalogOwnedKey)||'[]');if(Array.isArray(saved))catalogOwned=new Set(saved);if(section==='helmets'&&!saved.length){const old=JSON.parse(localStorage.getItem('playmobil-helmets-catalog-owned-v12')||'[]');catalogOwned=new Set(old)}} catch {}
 async function loadCatalog(){
- if(section!=='helmets')return;
+ 
  try {
-  const r=await fetch('./helmets-catalog.json',{cache:'no-store'});
+  const r=await fetch('./'+section+'-catalog.json',{cache:'no-store'});
   if(!r.ok)throw Error('A katalógus még nem érhető el');
   const payload=await r.json();
   catalog=Array.isArray(payload.items)?payload.items.filter(x=>x&&typeof x.id==='string'&&typeof x.part==='string'):[];
-  $('catalogStatus').textContent='PlaymoDB: '+catalog.length+' tétel · '+(payload.pagesSucceeded||0)+'/23 oldal feldolgozva'+(payload.status==='partial'?' (részleges)':'');
+  $('catalogStatus').textContent='PlaymoDB: '+catalog.length+' tétel · '+(payload.pagesSucceeded||0)+'/'+(payload.pagesAttempted||'?')+' oldal feldolgozva'+(payload.status==='partial'?' (részleges)':'');
   render();
  }catch(e){$('catalogStatus').textContent='PlaymoDB: az automatikus katalógus még nem érhető el';}
 }
@@ -35,6 +36,7 @@ for(const name of types[section]){const option=document.createElement('option');
 function render(){
  const term=$('search').value.toLocaleLowerCase(),filter=$('filter').value,typeFilter=$('typeFilter').value;
  const visible=allEntries().filter(x=>(!term||[x.name,x.part,x.type].join(' ').toLocaleLowerCase().includes(term))&&(typeFilter==='all'||x.type===typeFilter)&&(filter==='all'||(filter==='owned')===!!x.owned));
+ visible.sort((a,b)=>{const order=$('sort').value;const key=x=>String(x.part||'').replace(/[^0-9a-z]/gi,'').toLowerCase();return order==='part-desc'?key(b).localeCompare(key(a),undefined,{numeric:true}):order==='name'?String(a.name||'').localeCompare(String(b.name||'')):key(a).localeCompare(key(b),undefined,{numeric:true})});
  $('grid').replaceChildren();
  for(const entry of visible){
  const tile=document.createElement('article');tile.className='tile'+(entry.owned?' owned':'');
@@ -64,8 +66,8 @@ $('save').onclick=()=>{
  store();$('dialog').close();render();
 };
 $('delete').onclick=()=>{if(!selected||selected.catalog)return;if(!confirm('Biztosan törlöd ezt a cikket?'))return;records=records.filter(x=>x.key!==selected.key);store();$('dialog').close();render()};
-$('search').oninput=render;$('filter').onchange=render;$('typeFilter').onchange=render;
+$('search').oninput=render;$('filter').onchange=render;$('typeFilter').onchange=render;$('sort').onchange=render;
 $('export').onclick=()=>{const blob=new Blob([JSON.stringify({version:13,section,records,catalogOwned:[...catalogOwned],catalogEdits},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='playmobil-'+section+'-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)};
 $('importBtn').onclick=()=>$('importFile').click();
-$('importFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.section!==section||!Array.isArray(obj.records))throw Error('Más kategória vagy hibás mentés');if(!confirm('Felülírod a jelenlegi '+section+' listát?'))return;if(section==='helmets'){if(Array.isArray(obj.catalogOwned)){catalogOwned=new Set(obj.catalogOwned.filter(x=>typeof x==='string'));localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]))}if(obj.catalogEdits&&typeof obj.catalogEdits==='object'&&!Array.isArray(obj.catalogEdits)){catalogEdits=obj.catalogEdits;saveCatalogEdits()}}records=obj.records.filter(x=>x&&typeof x.key==='string'&&typeof x.name==='string'&&typeof x.part==='string'&&types[section].includes(x.type)&&validLink(x.image||'')&&validLink(x.source||''));store();render()}catch(err){alert('Hibás mentés: '+err.message)}e.target.value=''};
+$('importFile').onchange=async e=>{const file=e.target.files?.[0];if(!file)return;try{const obj=JSON.parse(await file.text());if(obj.section!==section||!Array.isArray(obj.records))throw Error('Más kategória vagy hibás mentés');if(!confirm('Felülírod a jelenlegi '+section+' listát?'))return;if(Array.isArray(obj.catalogOwned)){catalogOwned=new Set(obj.catalogOwned.filter(x=>typeof x==='string'));localStorage.setItem(catalogOwnedKey,JSON.stringify([...catalogOwned]))}if(obj.catalogEdits&&typeof obj.catalogEdits==='object'&&!Array.isArray(obj.catalogEdits)){catalogEdits=obj.catalogEdits;saveCatalogEdits()}records=obj.records.filter(x=>x&&typeof x.key==='string'&&typeof x.name==='string'&&typeof x.part==='string'&&types[section].includes(x.type)&&validLink(x.image||'')&&validLink(x.source||''));store();render()}catch(err){alert('Hibás mentés: '+err.message)}e.target.value=''};
 render();loadCatalog();
