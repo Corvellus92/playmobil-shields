@@ -1,6 +1,10 @@
 name: Sync Animobil shield images
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/sync_animobil.py'
+      - '.github/workflows/animobil-sync.yml'
   schedule:
     - cron: '20 4 * * 0'
 permissions:
