@@ -1,5 +1,5 @@
-const CACHE='playmobil-shields-v9-refresh-1';
-const FILES=['./','./index.html','./app.js?v=9','./manifest.webmanifest','./icon.svg'];
+const CACHE='playmobil-shields-v10-refresh-1';
+const FILES=['./','./index.html','./app.js?v=10','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)));self.skipWaiting()});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))));self.clients.claim()});
 self.addEventListener('fetch',event=>{
