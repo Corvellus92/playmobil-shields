@@ -90,7 +90,9 @@ def main():
    first=fetch(1,category)
    total_match=re.search(r'Results:\s*(\d+)\s*parts',first)
    total=int(total_match.group(1)) if total_match else 0
-   pages=max(1,(total+49)//50)
+   # Explicitly verified page counts. CGI variants can omit/change results counts.
+   pages=29 if category.endswith('Soft') else 23
+   print('Category',category,'reported parts',total,'scheduled pages',pages)
   except Exception as exc:
    errors.append({'category':category,'page':1,'error':str(exc)[:200]})
    categoryStats[category]={'pagesSucceeded':0,'pagesAttempted':1}
