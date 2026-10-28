@@ -1,67 +1,22 @@
 {
   "source": "https://playmodb.org/cgi-bin/category.pl?category=Wearable-Headwear%2CHard",
-  "pagesAttempted": 23,
-  "pagesSucceeded": 23,
+  "pagesAttempted": 2,
+  "pagesSucceeded": 2,
+  "categoryStats": {
+    "Wearable-Headwear,Hard": {
+      "pagesSucceeded": 1,
+      "pagesAttempted": 1,
+      "reportedParts": 0
+    },
+    "Wearable-Headwear,Soft": {
+      "pagesSucceeded": 1,
+      "pagesAttempted": 1,
+      "reportedParts": 0
+    }
+  },
   "status": "ok",
   "errors": [],
-  "parserSamples": [
-    {
-      "page": 1,
-      "htmlLength": 40765,
-      "lineups": 50,
-      "firstEntries": [
-        {
-          "part": "30 25 8413",
-          "name": "Helm-Samurai-Hörner \n",
-          "image": "https://playmodb.org/parts/2/25/30%2025%208413.jpg",
-          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-25-8413",
-          "color": "silver"
-        },
-        {
-          "part": "30 64 4163",
-          "name": "Helm-Samurai-Hörner ",
-          "image": "https://playmodb.org/parts/6/64/30%2064%204163_online(2).jpg",
-          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-64-4163",
-          "color": "blue"
-        },
-        {
-          "part": "30 28 7950",
-          "name": "Bubble, hemisphere, for head of diving suit ",
-          "image": "https://playmodb.org/parts/2/28/30%2028%207950_online.jpg",
-          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-28-7950",
-          "color": "clear"
-        }
-      ]
-    },
-    {
-      "page": 2,
-      "htmlLength": 40902,
-      "lineups": 50,
-      "firstEntries": [
-        {
-          "part": "30 09 1790",
-          "name": "Crown, scalloped, with centre decoration ",
-          "image": "https://playmodb.org/parts/0/09/30%2009%20179.gif",
-          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-09-1790",
-          "color": "silver"
-        },
-        {
-          "part": "30 20 9400",
-          "name": "Crown, scalloped, with centre decoration \n",
-          "image": "https://playmodb.org/parts/2/20/30%2020%209400_online(2).jpg",
-          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-20-9400",
-          "color": "gold"
-        },
-        {
-          "part": "30 26 0940",
-          "name": "Crown, scalloped, with centre decoration ",
-          "image": "https://playmodb.org/parts/2/26/30%2026%200940.gif",
-          "source": "https://playmodb.org/cgi-bin/showpart.pl?partnum=30-26-0940",
-          "color": "light pink"
-        }
-      ]
-    }
-  ],
+  "parserSamples": [],
   "items": [
     {
       "id": "playmodb:30258413",
