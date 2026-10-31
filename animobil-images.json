@@ -12,6 +12,14 @@
   "newImageCount": 0,
   "errorsSample": [
     {
+      "url": "https://animobil.info/shields/text/5d0863aa(shields)-1128.html",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
+    },
+    {
+      "url": "https://animobil.info/shields/text/5d0863aa(shields15)-1162.html",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
+    },
+    {
       "url": "https://animobil.info/shields/text/5d0863aa(shields)-910.html",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
     },
@@ -20,15 +28,7 @@
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
     },
     {
-      "url": "https://animobil.info/shields/text/5d0863aa(shields15)-1162.html",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
-    },
-    {
-      "url": "https://animobil.info/shields/text/5d0863aa(shields)-1128.html",
-      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
-    },
-    {
-      "url": "https://animobil.info/shields/text/5d0863aa-570.html",
+      "url": "https://animobil.info/shields/text/5d0863aa-569.html",
       "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)>"
     }
   ]
