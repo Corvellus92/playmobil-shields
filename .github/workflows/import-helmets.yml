@@ -1,42 +1,8 @@
-name: Import PlaymoDB Helmets
+name: Archived import-helmets.yml
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'scripts/import_helmets.py'
-      - '.github/workflows/import-helmets.yml'
-concurrency:
-  group: playmodb-helmets-import
-  cancel-in-progress: false
-permissions:
-  contents: write
 jobs:
-  import:
+  info:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Parse 23 PlaymoDB pages
-        run: python scripts/import_helmets.py
-      - name: Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if [ ! -f helmets-catalog.json ]; then echo 'Missing catalog output'; exit 1; fi
-          python -c "import json; d=json.load(open('helmets-catalog.json')); print('Import report: pages',d.get('pagesSucceeded'),'/',d.get('pagesAttempted'),'items:',d.get('itemsFound'),'categories:',d.get('categoryStats'),'errors:',len(d.get('errors', [])))"
-          git add helmets-catalog.json
-          if git diff --cached --quiet; then
-            echo "No catalogue changes"
-            exit 0
-          fi
-          git commit -m "Update PlaymoDB helmets catalog"
-          for attempt in 1 2 3; do
-            if git push; then exit 0; fi
-            echo "Push conflict, fetching latest main (attempt $attempt)"
-            git fetch origin main
-            git rebase origin/main || { git rebase --abort; exit 1; }
-          done
-          echo "Failed to push catalog after retries"
-          exit 1
+      - run: echo 'Automatic external imports are disabled. Excel is now the catalogue source.'
