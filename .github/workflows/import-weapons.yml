@@ -1,26 +1,8 @@
-name: Import PlaymoDB Weapons
+name: Archived import-weapons.yml
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'scripts/import_weapons.py'
-      - '.github/workflows/import-weapons.yml'
-permissions:
-  contents: write
 jobs:
-  import:
+  info:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Fetch weapon catalog
-        run: python scripts/import_weapons.py
-      - name: Commit results
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          test -f weapons-catalog.json
-          git add weapons-catalog.json
-          git diff --cached --quiet || (git commit -m "Update PlaymoDB weapons catalog" && git push)
+      - run: echo 'Automatic external imports are disabled. Excel is now the catalogue source.'
