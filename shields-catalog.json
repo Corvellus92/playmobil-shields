@@ -1,6 +1,109 @@
 {
-  "items": [],
-  "pagesAttempted": 0,
-  "pagesSucceeded": 0,
-  "status": "empty"
+  "source": "Play collection.xlsx / Pajzsok",
+  "columns": [
+    "A",
+    "B",
+    "C",
+    "G"
+  ],
+  "items": [
+    {
+      "id": "excel:2",
+      "part": "2427127",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": ""
+    },
+    {
+      "id": "excel:3",
+      "part": "30 03 8545 and 30 82 2346 a",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30038545-30822346a.png"
+    },
+    {
+      "id": "excel:4",
+      "part": "30 03 8545 and 30 82 2346 b",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30038545-30822346b.png"
+    },
+    {
+      "id": "excel:5",
+      "part": "30 22 5943",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/archedgold.png"
+    },
+    {
+      "id": "excel:6",
+      "part": "30 22 5943 and 30 80 5377",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30225943-30805377.png"
+    },
+    {
+      "id": "excel:7",
+      "part": "30 62 0985",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30620985.png"
+    },
+    {
+      "id": "excel:8",
+      "part": "30 63 5214",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30635212.png"
+    },
+    {
+      "id": "excel:9",
+      "part": "30 64 2002",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/60342002.png"
+    },
+    {
+      "id": "excel:10",
+      "part": "30 64 2012",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30642012.png"
+    },
+    {
+      "id": "excel:11",
+      "part": "30 64 2022",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30642022.png"
+    },
+    {
+      "id": "excel:12",
+      "part": "30 64 2032",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/30642032.png"
+    },
+    {
+      "id": "excel:13",
+      "part": "70734 b",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/70734b.png"
+    },
+    {
+      "id": "excel:14",
+      "part": "80564",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/80564.png"
+    },
+    {
+      "id": "excel:15",
+      "part": "Arched Plain Brown",
+      "category": "Shield",
+      "shape": "Arched",
+      "image": "https://animobil.info/shields/wit-icons/Arched Plain Brown.png"
+    }
+  ]
 }
