@@ -1,5 +1,5 @@
 'use strict';
-const $=id=>document.getElementById(id), DATA='playmobil-personal-inventory-v17', DB='playmobil-personal-photos';
+const $=id=>document.getElementById(id), DATA='playmobil-personal-inventory-v19', DB='playmobil-personal-photos-v19';
 let items=[],editing=null,photoData=null;
 try{const v=JSON.parse(localStorage.getItem(DATA)||'[]');if(Array.isArray(v))items=v}catch{}
 const normalize=x=>String(x||'').toLocaleLowerCase('hu').replace(/[\s-]/g,'');
