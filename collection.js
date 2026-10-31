@@ -4,20 +4,20 @@ const titles={helmets:'🪖 Helmets',weapons:'⚔️ Weapons'};
 const types={weapons:['Sword','Axe','Spear','Bow','Crossbow','Dagger','Mace','Halberd','Staff','Firearm','Other'],helmets:['Knight Helmet','Viking Helmet','Roman Helmet','Medieval Helmet','Modern Helmet','Fantasy Helmet','Hat','Other']};
 const $=id=>document.getElementById(id);
 const typeSettings=JSON.parse(localStorage.getItem('playmobil-types-v15')||'{}');if(Array.isArray(typeSettings[section])&&typeSettings[section].length)types[section]=typeSettings[section];
-const storageKey='playmobil-collection-'+section+'-v11';
+const storageKey='playmobil-collection-'+section+'-v19';
 let records=[];
 try{const data=JSON.parse(localStorage.getItem(storageKey)||'[]');if(Array.isArray(data))records=data.filter(x=>x&&typeof x.key==='string')}catch{}
 let selected=null;
 let catalog=[];
-const hiddenKey='playmobil-'+section+'-hidden-v16';
+const hiddenKey='playmobil-'+section+'-hidden-v19';
 let hidden=new Set();try{const x=JSON.parse(localStorage.getItem(hiddenKey)||'[]');if(Array.isArray(x))hidden=new Set(x)}catch{}
 function saveHidden(){localStorage.setItem(hiddenKey,JSON.stringify([...hidden]))}
-const catalogOwnedKey='playmobil-'+section+'-catalog-owned-v15';
+const catalogOwnedKey='playmobil-'+section+'-catalog-owned-v19';
 let catalogOwned=new Set();
-const editsKey='playmobil-'+section+'-catalog-edits-v15';
+const editsKey='playmobil-'+section+'-catalog-edits-v19';
 let catalogEdits={};try{const v=JSON.parse(localStorage.getItem(editsKey)||localStorage.getItem(section==='helmets'?'playmobil-helmets-catalog-edits-v13':'_none_')||'{}');if(v&&typeof v==='object'&&!Array.isArray(v))catalogEdits=v}catch{}
 function saveCatalogEdits(){localStorage.setItem(editsKey,JSON.stringify(catalogEdits))}
-try { const saved=JSON.parse(localStorage.getItem(catalogOwnedKey)||'[]');if(Array.isArray(saved))catalogOwned=new Set(saved);if(section==='helmets'&&!saved.length){const old=JSON.parse(localStorage.getItem('playmobil-helmets-catalog-owned-v12')||'[]');catalogOwned=new Set(old)}} catch {}
+try { const saved=JSON.parse(localStorage.getItem(catalogOwnedKey)||'[]');if(Array.isArray(saved))catalogOwned=new Set(saved);if(false){catalogOwned=new Set()}} catch {}
 async function loadCatalog(){
  
  try {
