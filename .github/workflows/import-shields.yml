@@ -1,26 +1,8 @@
-name: Import PlaymoDB Shields
+name: Archived import-shields.yml
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - 'scripts/import_shields.py'
-      - '.github/workflows/import-shields.yml'
-permissions:
-  contents: write
 jobs:
-  import:
+  info:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - name: Import Tool-Shield pages
-        run: python scripts/import_shields.py
-      - name: Commit shield catalog
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          test -f shields-catalog.json
-          git add shields-catalog.json
-          git diff --cached --quiet || (git commit -m "Update PlaymoDB shields catalog" && git push)
+      - run: echo 'Automatic external imports are disabled. Excel is now the catalogue source.'
